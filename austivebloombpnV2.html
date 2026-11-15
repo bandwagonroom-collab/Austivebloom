@@ -1,0 +1,3185 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUSTIVE BLOOM FLORIST - Premium Floral Studio</title>
+
+    <!-- SEO dasar & preview tautan (WhatsApp, media sosial) -->
+    <meta name="description" content="AUSTIVE BLOOM FLORIST – studio bunga segar, artificial, dan hampers di Denpasar, Bali. Pesan buket dan custom order langsung via WhatsApp.">
+    <meta name="theme-color" content="#FBF7F4">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AUSTIVE BLOOM FLORIST">
+    <meta property="og:title" content="AUSTIVE BLOOM FLORIST – Premium Floral Studio">
+    <meta property="og:description" content="Rangkaian bunga segar, artificial pilihan, dan hampers untuk momen berharga Anda. Same-day delivery di Denpasar.">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1200&h=630&auto=format&fit=crop">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌸%3C/text%3E%3C/svg%3E">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Florist",
+        "name": "AUSTIVE BLOOM FLORIST",
+        "description": "Studio bunga segar, artificial, dan hampers di Denpasar, Bali.",
+        "telephone": "+62 878-3321-8502",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Jl. Floral Delight No. 88",
+            "addressLocality": "Denpasar",
+            "addressRegion": "Bali",
+            "addressCountry": "ID"
+        },
+        "openingHours": ["Mo-Sa 08:00-20:00", "Su 09:00-17:00"]
+    }
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@0.383.0/dist/umd/lucide.min.js"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        if (typeof tailwind !== 'undefined') tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'soft-beige': 'rgb(var(--rgb-bg-main, 251 247 244) / <alpha-value>)',
+                        'warm-cream': 'rgb(var(--rgb-bg-card, 243 236 231) / <alpha-value>)',
+                        'taupe': 'rgb(158 131 115 / <alpha-value>)',
+                        'taupe-dark': 'rgb(122 98 83 / <alpha-value>)',
+                        'blush-pink': '#F3C5C5',
+                        'blush-light': '#FDF6F6',
+                        'orange-cta': 'rgb(230 126 34 / <alpha-value>)',
+                        'orange-hover': '#D35400',
+                        'ink': 'rgb(var(--rgb-ink, 44 34 30) / <alpha-value>)',
+                        'ink-muted': '#66564D',
+                        'gold-accent': '#D4AF37',
+                        'editor-dark': '#1E232A',
+                        'editor-card': '#2A303C',
+                        'editor-accent': '#00D7C0'
+                    },
+                    backdropBlur: { xs: '2px' },
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        script: ['Alex Brush', 'cursive'],
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 30px rgba(158, 131, 115, 0.08)',
+                        'card': '0 12px 25px -5px rgba(44, 34, 30, 0.06)',
+                        'floating': '0 20px 40px rgba(44, 34, 30, 0.18)',
+                        'pill-active': '0 8px 25px rgba(44, 34, 30, 0.25)',
+                        'xs': '0 1px 2px rgba(44, 34, 30, 0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        :root {
+            --bg-main: #FBF7F4;
+            --bg-card: #F3ECE7;
+            --color-accent: #9E8373;
+            --color-primary: #7A6253;
+            --color-cta: #E67E22;
+            --text-main: #2C221E;
+            --card-radius: 16px;
+            --btn-radius: 12px;
+            --hero-height: 28rem;
+            --hero-bg-url: url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1600&auto=format&fit=crop');
+            --hero-bg-pos: center 35%;
+            --hero-bg-blur: 0px;
+            --hero-overlay-color: rgba(44, 34, 30, 0.55);
+            --hero-title-color: #FFFFFF;
+            --hero-title-size: 3.5rem;
+        }
+
+        /* Token desain: skala tipografi, spasi, dan warna status */
+        :root {
+            --fs-h1: 1.875rem;
+            --fs-h2: 1.375rem;
+            --fs-h3: 1rem;
+            --fs-body: 0.875rem;
+            --fs-small: 0.75rem;
+            --space-section: 2.5rem;
+            --space-stack: 1rem;
+            --color-focus: #E67E22;
+            --color-danger: #DC2626;
+            --color-success: #059669;
+            --color-info: #2563EB;
+        }
+        .type-h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: var(--fs-h1); font-weight: 700; line-height: 1.2; }
+        .type-h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: var(--fs-h2); font-weight: 700; line-height: 1.25; }
+        .type-h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: var(--fs-h3); font-weight: 600; line-height: 1.4; }
+        .type-body { font-size: var(--fs-body); line-height: 1.6; }
+        .type-small { font-size: var(--fs-small); line-height: 1.5; }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            -webkit-tap-highlight-color: transparent;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .dynamic-card {
+            border-radius: var(--card-radius);
+        }
+
+        .dynamic-btn {
+            border-radius: var(--btn-radius);
+        }
+
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .category-pill {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            background-color: rgba(255, 255, 255, 0.85);
+            color: #66564D;
+            border: 1px solid rgba(158, 131, 115, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 9999px;
+        }
+
+        .category-pill:hover {
+            background-color: #FFFFFF;
+            color: #2C221E;
+            transform: translateY(-2px);
+            border-color: rgba(158, 131, 115, 0.4);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .category-pill.active {
+            background: linear-gradient(135deg, #2C221E 0%, #473731 100%);
+            color: #FFFFFF;
+            border-color: #2C221E;
+            box-shadow: 0 8px 22px rgba(44, 34, 30, 0.22);
+        }
+
+        .category-pill.active .pill-icon {
+            color: #E67E22;
+        }
+
+        .glass-header {
+            background: rgba(251, 247, 244, 0.88);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+
+        /* Dark preset overrides: menjaga kontras saat tema gelap aktif */
+        [data-theme="dark"] .bg-white { background-color: #262321 !important; }
+        [data-theme="dark"] .text-ink-muted { color: #BFAFA5 !important; }
+        [data-theme="dark"] .text-taupe-dark { color: #D8B9A3 !important; }
+        [data-theme="dark"] .glass-header { background: rgba(24, 22, 21, 0.9); }
+        [data-theme="dark"] .category-pill { background-color: rgba(38, 35, 33, 0.9); color: #D9CCC4; border-color: rgba(255,255,255,0.12); }
+        [data-theme="dark"] .category-pill:hover { background-color: #33302D; color: #FFFFFF; }
+        [data-theme="dark"] .category-pill.active { background: #F5EFEA; color: #181615; border-color: #F5EFEA; }
+        [data-theme="dark"] .category-pill.active .pill-icon { color: #B5561A; }
+        [data-theme="dark"] footer { background-color: #0F0E0D !important; }
+        [data-theme="dark"] input, [data-theme="dark"] select, [data-theme="dark"] textarea { color: #F5EFEA; }
+        [data-theme="dark"] input::placeholder, [data-theme="dark"] textarea::placeholder { color: #8F817A; }
+        [data-theme="dark"] .bg-soft-beige\/40 { background-color: rgba(255, 255, 255, 0.04) !important; }
+        [data-theme="dark"] .border-taupe\/25, [data-theme="dark"] .border-taupe\/30 { border-color: rgba(255, 255, 255, 0.14) !important; }
+        [data-theme="dark"] .bg-soft-beige { background-color: var(--bg-main); }
+        [data-theme="dark"] .bg-blush-light { background-color: #2A2321; }
+
+        /* Hero Layer Customization */
+        .hero-container {
+            position: relative;
+            min-height: var(--hero-height);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-bg-layer {
+            position: absolute;
+            inset: 0;
+            background-image: var(--hero-bg-url);
+            background-size: cover;
+            background-position: var(--hero-bg-pos);
+            filter: blur(var(--hero-bg-blur));
+            transform: scale(1.03);
+            transition: all 0.3s ease;
+        }
+
+        .hero-overlay-layer {
+            position: absolute;
+            inset: 0;
+            background: var(--hero-overlay-color);
+            transition: background 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        /* Press feedback: tombol menekan ke dalam saat disentuh/diklik */
+        button:not(:disabled):not([class*="active:scale"]) {
+            transition: scale 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.2s ease;
+        }
+        button:not(:disabled):not([class*="active:scale"]):active { scale: 0.96; }
+        button:not(:disabled):active { filter: brightness(0.97); }
+
+        /* Kartu produk: transisi terpisah untuk hover (desktop) dan tekan (sentuh) */
+        .product-card {
+            transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.45s ease, scale 0.2s ease;
+        }
+        @media (max-width: 1023px) {
+            .product-card:active { scale: 0.975; transition-duration: 0.12s; }
+        }
+        /* Badge dan indikator kecil di kartu */
+        .chip { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: 9999px; font-size: 10px; font-weight: 700; line-height: 1.4; }
+        @media (hover: none) {
+            /* Cegah efek hover "nyangkut" setelah jari mengangkat dari layar */
+            .product-card:hover {
+                transform: none !important;
+                box-shadow: 0 12px 25px -5px rgba(44, 34, 30, 0.06) !important;
+            }
+        }
+
+        /* Skeleton shimmer untuk gambar produk yang sedang dimuat */
+        .skeleton-shimmer {
+            background-color: rgb(var(--rgb-bg-card, 243 236 231));
+            background-image: linear-gradient(100deg, transparent 20%, rgb(var(--rgb-bg-main, 251 247 244) / 0.9) 50%, transparent 80%);
+            background-size: 200% 100%;
+            animation: skeleton-sweep 1.6s ease-in-out infinite;
+        }
+        .skeleton-shimmer:has(img.is-loaded) { animation: none; background-image: none; background-color: transparent; }
+        @keyframes skeleton-sweep {
+            from { background-position: 150% 0; }
+            to { background-position: -50% 0; }
+        }
+        img.img-fade { opacity: 0; }
+        img.img-fade.is-loaded { opacity: 1; }
+
+        /* Aksesibilitas: fokus keyboard terlihat jelas */
+        :focus-visible { outline: 2px solid #E67E22; outline-offset: 2px; }
+        label:has(input[type="radio"]:focus-visible) { outline: 2px solid #E67E22; outline-offset: 2px; }
+
+        /* Hormati preferensi pengguna yang mengurangi animasi */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+    </style>
+</head>
+<body class="pb-24 lg:pb-12 min-h-screen flex flex-col justify-between selection:bg-blush-pink selection:text-ink">
+
+    <!-- Admin Top Bar -->
+    <div id="adminTopBar" class="bg-editor-dark text-white px-4 py-2 text-xs font-medium flex flex-wrap items-center justify-between border-b border-white/10 hidden gap-2 relative z-50 shadow-lg">
+        <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>Mode Admin Toko Aktif — <strong id="adminEmailLabel">admin</strong></span>
+        </div>
+        <div class="flex items-center gap-2">
+            <div id="adminMenuWrap" class="relative">
+                <button id="adminMenuBtn" onclick="toggleAdminMenu(event)" aria-haspopup="menu" aria-expanded="false" aria-controls="adminMenu" class="px-3.5 py-1.5 bg-editor-accent text-editor-dark font-bold rounded-lg hover:brightness-110 transition-all flex items-center gap-1.5 text-xs shadow-md min-h-[36px]">
+                    <i data-lucide="menu" class="w-3.5 h-3.5"></i> Menu Admin
+                    <i data-lucide="chevron-down" class="w-3.5 h-3.5"></i>
+                </button>
+                <div id="adminMenu" role="menu" class="hidden absolute right-0 top-full mt-2 w-56 bg-editor-card border border-white/10 rounded-xl shadow-2xl p-1.5 z-[60]">
+                    <button role="menuitem" onclick="adminMenuAction('add')" class="w-full text-left px-3 py-2.5 rounded-lg text-white/90 hover:bg-white/10 text-xs font-semibold flex items-center gap-2 min-h-[44px]">
+                        <i data-lucide="plus-circle" class="w-4 h-4 text-editor-accent"></i> Tambah Produk
+                    </button>
+                    <button role="menuitem" onclick="adminMenuAction('orders')" class="w-full text-left px-3 py-2.5 rounded-lg text-white/90 hover:bg-white/10 text-xs font-semibold flex items-center gap-2 min-h-[44px]">
+                        <i data-lucide="clipboard-list" class="w-4 h-4 text-editor-accent"></i> Daftar Pesanan
+                        <span id="adminMenuOrderBadge" class="ml-auto chip bg-orange-cta text-white hidden">0</span>
+                    </button>
+                    <button role="menuitem" onclick="adminMenuAction('builder')" class="w-full text-left px-3 py-2.5 rounded-lg text-white/90 hover:bg-white/10 text-xs font-semibold flex items-center gap-2 min-h-[44px]">
+                        <i data-lucide="palette" class="w-4 h-4 text-editor-accent"></i> Visual Builder
+                    </button>
+                    <div class="my-1 border-t border-white/10"></div>
+                    <button role="menuitem" onclick="adminMenuAction('logout')" class="w-full text-left px-3 py-2.5 rounded-lg text-red-300 hover:bg-white/10 text-xs font-semibold flex items-center gap-2 min-h-[44px]">
+                        <i data-lucide="log-out" class="w-4 h-4"></i> Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="glass-header sticky top-0 z-40 transition-all border-b border-taupe/15">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2.5 group">
+                <div class="w-9 h-9 rounded-full bg-ink/5 border border-taupe/20 flex items-center justify-center text-taupe group-hover:scale-105 transition-transform">
+                    <i data-lucide="flower-2" class="w-5 h-5 text-taupe-dark"></i>
+                </div>
+                <div>
+                    <span id="display-store-name" class="font-serif font-bold text-xl tracking-wider text-ink block leading-none">AUSTIVE BLOOM</span>
+                    <span id="display-store-tagline" class="text-[9px] uppercase tracking-widest text-taupe font-semibold block mt-1">Studio Bunga</span>
+                </div>
+            </a>
+
+            <div class="flex items-center gap-3">
+                <button onclick="switchCategoryTab('custom')" class="hidden md:flex items-center gap-2 text-xs font-semibold px-4 py-2 dynamic-btn border border-taupe/30 hover:bg-taupe/10 transition-all hover:scale-105">
+                    <i data-lucide="sparkles" class="w-4 h-4 text-orange-cta"></i>
+                    <span>Buket Custom</span>
+                </button>
+                <button onclick="openCart()" class="relative p-2.5 rounded-full hover:bg-taupe/10 transition-colors" aria-label="Buka Keranjang">
+                    <i data-lucide="shopping-bag" class="w-6 h-6 text-ink"></i>
+                    <span id="cartBadge" class="absolute top-1 right-1 w-5 h-5 bg-orange-cta text-white font-bold text-[10px] rounded-full flex items-center justify-center border-2 border-soft-beige shadow-sm hidden">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section Dynamic -->
+        <section id="heroSection" class="relative hero-container py-20 px-4 sm:py-28 text-center overflow-hidden">
+            <div id="heroBgLayer" class="hero-bg-layer"></div>
+            <div id="heroOverlayLayer" class="hero-overlay-layer"></div>
+
+            <div class="relative max-w-2xl mx-auto text-white space-y-4 animate-fade-in z-10">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/20 text-xs font-medium text-soft-beige mb-1 shadow-sm">
+                    <i data-lucide="star" class="w-3.5 h-3.5 text-gold-accent fill-gold-accent"></i>
+                    <span id="display-hero-badge">Studio Bunga Premium & Hadiah</span>
+                </div>
+
+                <span id="display-hero-script" class="font-script text-3xl sm:text-5xl text-blush-pink block drop-shadow-md">Bunga Mekar Cerita Kita</span>
+                <h1 id="display-hero-title" class="font-serif font-bold tracking-wider leading-tight text-white drop-shadow-lg" style="font-size: var(--hero-title-size); color: var(--hero-title-color);">
+                    AUSTIVE BLOOM
+                </h1>
+                <p id="display-hero-subtitle" class="text-xs sm:text-sm font-light text-soft-beige/90 max-w-md mx-auto leading-relaxed drop-shadow">
+                    Rangkaian bunga segar, artificial pilihan, dan hampers elegan yang dirangkai khusus untuk momen paling berharga Anda.
+                </p>
+
+                <div class="pt-2 flex items-center justify-center gap-6 text-[11px] text-soft-beige/80 font-medium">
+                    <span class="flex items-center gap-1.5"><i data-lucide="truck" class="w-4 h-4 text-blush-pink"></i> Pengiriman Same-Day</span>
+                    <span class="flex items-center gap-1.5"><i data-lucide="heart" class="w-4 h-4 text-blush-pink"></i> 100% Dirangkai Tangan</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category Navigation Pills -->
+        <div id="catalogAnchor" class="sticky top-[59px] z-30 bg-soft-beige/95 backdrop-blur-md border-b border-taupe/15 py-3 px-4 shadow-xs">
+            <div class="max-w-6xl mx-auto flex items-center justify-start sm:justify-center gap-2.5 overflow-x-auto no-scrollbar scroll-smooth px-1 py-0.5">
+                <button id="pill-fresh" onclick="switchCategoryTab('fresh')" class="category-pill active whitespace-nowrap px-5 py-2.5 text-xs font-bold tracking-wide flex items-center gap-2">
+                    <i data-lucide="flower-2" class="w-4 h-4 pill-icon"></i>
+                    <span>Bunga Segar</span>
+                </button>
+                <button id="pill-artificial" onclick="switchCategoryTab('artificial')" class="category-pill whitespace-nowrap px-5 py-2.5 text-xs font-bold tracking-wide flex items-center gap-2">
+                    <i data-lucide="sparkles" class="w-4 h-4 pill-icon"></i>
+                    <span>Bunga Artificial</span>
+                </button>
+                <button id="pill-gift" onclick="switchCategoryTab('gift')" class="category-pill whitespace-nowrap px-5 py-2.5 text-xs font-bold tracking-wide flex items-center gap-2">
+                    <i data-lucide="gift" class="w-4 h-4 pill-icon"></i>
+                    <span>Hampers & Snack</span>
+                </button>
+                <button id="pill-custom" onclick="switchCategoryTab('custom')" class="category-pill whitespace-nowrap px-5 py-2.5 text-xs font-bold tracking-wide flex items-center gap-2">
+                    <i data-lucide="sliders" class="w-4 h-4 pill-icon"></i>
+                    <span>Pesan Custom</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 py-8">
+            <!-- Section 1: Fresh Flower -->
+            <section id="section-fresh" class="category-section animate-fade-in">
+                <div class="flex items-end justify-between mb-6 pb-3 border-b border-taupe/20">
+                    <div>
+                        <span class="font-script text-2xl text-taupe block">Segar & Harum</span>
+                        <h2 class="font-serif text-2xl sm:text-3xl font-bold text-ink tracking-tight">Koleksi Bunga Segar</h2>
+                    </div>
+                    <span class="text-xs text-ink-muted font-semibold bg-warm-cream border border-taupe/20 px-3.5 py-1.5 rounded-full shadow-xs">
+                        <span id="fresh-count">0</span> Produk
+                    </span>
+                </div>
+                <div id="grid-fresh" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6"></div>
+            </section>
+
+            <!-- Section 2: Artificial Flower -->
+            <section id="section-artificial" class="category-section hidden animate-fade-in">
+                <div class="flex items-end justify-between mb-6 pb-3 border-b border-taupe/20">
+                    <div>
+                        <span class="font-script text-2xl text-taupe block">Keindahan Abadi</span>
+                        <h2 class="font-serif text-2xl sm:text-3xl font-bold text-ink tracking-tight">Koleksi Bunga Artificial</h2>
+                    </div>
+                    <span class="text-xs text-ink-muted font-semibold bg-warm-cream border border-taupe/20 px-3.5 py-1.5 rounded-full shadow-xs">
+                        <span id="artificial-count">0</span> Produk
+                    </span>
+                </div>
+                <div id="grid-artificial" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6"></div>
+            </section>
+
+            <!-- Section 3: Gift & Snack -->
+            <section id="section-gift" class="category-section hidden animate-fade-in">
+                <div class="flex items-end justify-between mb-6 pb-3 border-b border-taupe/20">
+                    <div>
+                        <span class="font-script text-2xl text-taupe block">Kejutan Manis</span>
+                        <h2 class="font-serif text-2xl sm:text-3xl font-bold text-ink tracking-tight">Koleksi Hampers & Snack</h2>
+                    </div>
+                    <span class="text-xs text-ink-muted font-semibold bg-warm-cream border border-taupe/20 px-3.5 py-1.5 rounded-full shadow-xs">
+                        <span id="gift-count">0</span> Produk
+                    </span>
+                </div>
+                <div id="grid-gift" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6"></div>
+            </section>
+
+            <!-- Section 4: Custom Flower Order Form -->
+            <section id="section-custom" class="category-section hidden animate-fade-in">
+                <div class="bg-white dynamic-card p-6 sm:p-10 shadow-card border border-taupe/20 max-w-3xl mx-auto relative overflow-hidden">
+                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-blush-pink/20 rounded-full blur-3xl pointer-events-none"></div>
+
+                    <div class="text-center max-w-lg mx-auto mb-8 relative">
+                        <span class="font-script text-3xl text-taupe block">Dirangkai Khusus</span>
+                        <h2 class="font-serif text-3xl font-bold text-ink mb-2">Form Pesan Buket Custom</h2>
+                        <p class="text-xs sm:text-sm text-ink-muted">Rancang buket bunga impian Anda sesuai preferensi warna, jenis, dan anggaran.</p>
+                    </div>
+
+                    <button type="button" onclick="openAiSommelier()" class="mb-5 w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl border border-taupe/30 bg-white hover:bg-taupe/5 text-sm font-semibold text-ink min-h-[44px] transition-colors">
+                        <i data-lucide="sparkles" class="w-4 h-4 text-orange-cta"></i> Bantu Pilih Buket (AI Sommelier)
+                    </button>
+
+                    <form id="customOrderForm" onsubmit="submitCustomOrder(event)" class="space-y-5 relative" novalidate>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-ink-muted mb-1.5">Nama Pemesan *</label>
+                                <input type="text" id="custName" required placeholder="Contoh: Amanda Rizky" class="w-full px-4 py-3 dynamic-btn border border-taupe/25 bg-soft-beige/40 focus:bg-white focus:outline-none focus:ring-2 focus:ring-taupe text-sm transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-ink-muted mb-1.5">Nomor WhatsApp *</label>
+                                <input type="tel" id="custWA" required placeholder="08123456789" class="w-full px-4 py-3 dynamic-btn border border-taupe/25 bg-soft-beige/40 focus:bg-white focus:outline-none focus:ring-2 focus:ring-taupe text-sm transition-all">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-ink-muted mb-1.5">Jenis Bunga *</label>
+                                <select id="custType" required class="w-full px-4 py-3 dynamic-btn border border-taupe/25 bg-soft-beige/40 focus:bg-white focus:outline-none focus:ring-2 focus:ring-taupe text-sm transition-all">
+                                    <option value="Bunga Segar">Bunga Segar (Asli)</option>
+                                    <option value="Bunga Artificial">Bunga Artificial (Awet)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-ink-muted mb-1.5">Warna Dominan *</label>
+                                <input type="text" id="custColor" required placeholder="Contoh: Soft Pink & White Cream" class="w-full px-4 py-3 dynamic-btn border border-taupe/25 bg-soft-beige/40 focus:bg-white focus:outline-none focus:ring-2 focus:ring-taupe text-sm transition-all">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-ink-muted mb-1.5">Estimasi Anggaran (Rp) *</label>
+                                <input type="number" id="custBudget" required min="50000" step="1000" placeholder="250000" class="w-full px-4 py-3 dynamic-btn border border-taupe/25 bg-soft-beige/40 focus:bg-white focus:outline-none focus:ring-2 focus:ring-taupe text-sm transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-ink-muted mb-1.5">Ukuran Buket *</label>
+                                <div class="grid grid-cols-3 gap-2">
+                                    <label class="cursor-pointer text-center py-2.5 px-2 dynamic-btn border border-taupe/25 text-xs font-medium has-[:checked]:bg-ink has-[:checked]:text-white transition-all shadow-xs">
+                                        <input type="radio" name="custSize" value="Kecil" checked class="sr-only"> Kecil
+                                    </label>
+                                    <label class="cursor-pointer text-center py-2.5 px-2 dynamic-btn border border-taupe/25 text-xs font-medium has-[:checked]:bg-ink has-[:checked]:text-white transition-all shadow-xs">
+                                        <input type="radio" name="custSize" value="Sedang" class="sr-only"> Sedang
+                                    </label>
+                                    <label class="cursor-pointer text-center py-2.5 px-2 dynamic-btn border border-taupe/25 text-xs font-medium has-[:checked]:bg-ink has-[:checked]:text-white transition-all shadow-xs">
+                                        <input type="radio" name="custSize" value="Besar" class="sr-only"> Besar
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-ink-muted mb-1.5">Acara / Momen *</label>
+                                <select id="custEvent" required class="w-full px-4 py-3 dynamic-btn border border-taupe/25 bg-soft-beige/40 focus:bg-white focus:outline-none focus:ring-2 focus:ring-taupe text-sm transition-all">
+                                    <option value="Ulang Tahun">Ulang Tahun</option>
+                                    <option value="Wisuda">Wisuda</option>
+                                    <option value="Pernikahan">Pernikahan</option>
+                                    <option value="Hari Jadi">Hari Jadi</option>
+                                    <option value="Duka Cita">Duka Cita</option>
+                                    <option value="Lainnya">Lainnya</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-ink-muted mb-1.5">Tanggal Dibutuhkan *</label>
+                                <input type="date" id="custDate" required class="w-full px-4 py-3 dynamic-btn border border-taupe/25 bg-soft-beige/40 focus:bg-white focus:outline-none focus:ring-2 focus:ring-taupe text-sm transition-all">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-ink-muted mb-1.5">Metode Pembayaran *</label>
+                            <div class="grid grid-cols-3 gap-2" role="radiogroup" aria-label="Metode pembayaran">
+                                <label class="cursor-pointer text-center py-3 px-2 dynamic-btn border border-taupe/25 text-sm font-medium has-[:checked]:bg-ink has-[:checked]:text-white transition-all shadow-xs">
+                                    <input type="radio" name="custPay" value="Cash" class="sr-only"> Cash
+                                </label>
+                                <label class="cursor-pointer text-center py-3 px-2 dynamic-btn border border-taupe/25 text-sm font-medium has-[:checked]:bg-ink has-[:checked]:text-white transition-all shadow-xs">
+                                    <input type="radio" name="custPay" value="Transfer" class="sr-only"> Transfer
+                                </label>
+                                <label class="cursor-pointer text-center py-3 px-2 dynamic-btn border border-taupe/25 text-sm font-medium has-[:checked]:bg-ink has-[:checked]:text-white transition-all shadow-xs">
+                                    <input type="radio" name="custPay" value="QRIS" class="sr-only"> QRIS
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-ink-muted mb-1.5">Catatan Tambahan / Link Foto Referensi</label>
+                            <textarea id="custNotes" rows="3" placeholder="Contoh: Minta tambahan pita warna cream dan kartu ucapan..." class="w-full px-4 py-3 dynamic-btn border border-taupe/25 bg-soft-beige/40 focus:bg-white focus:outline-none focus:ring-2 focus:ring-taupe text-sm transition-all"></textarea>
+                        </div>
+
+                        <div class="pt-2">
+                            <button type="submit" class="w-full bg-gradient-to-r from-orange-cta to-orange-hover hover:from-orange-hover hover:to-orange-cta text-white font-bold py-4 dynamic-btn shadow-lg transition-all flex items-center justify-center gap-2.5 text-base transform active:scale-[0.99]">
+                                <i data-lucide="send" class="w-5 h-5"></i>
+                                Kirim Pesanan Custom via WhatsApp
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Floating Add Product Button (Admin Only) -->
+
+    <!-- Footer -->
+    <footer class="bg-ink text-soft-beige border-t border-taupe/20 pt-12 pb-24 lg:pb-12">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="space-y-3">
+                <div class="flex items-center gap-2.5">
+                    <div class="w-7 h-7 rounded-full bg-blush-pink/20 flex items-center justify-center">
+                        <i data-lucide="flower-2" class="w-4 h-4 text-blush-pink"></i>
+                    </div>
+                    <span id="display-footer-name" class="font-serif font-bold text-2xl tracking-wider text-white">AUSTIVE BLOOM</span>
+                </div>
+                <p id="display-footer-desc" class="text-xs text-soft-beige/70 leading-relaxed">
+                    Studio bunga terpercaya penyedia buket bunga segar, artificial premium, serta hampers hadiah manis untuk momen terbaik Anda.
+                </p>
+            </div>
+
+            <div class="space-y-2">
+                <h4 class="font-serif font-bold text-lg text-white">Jam Operasional</h4>
+                <p id="display-hours-weekday" class="text-xs text-soft-beige/70">Senin - Sabtu: 08.00 - 20.00 WITA</p>
+                <p id="display-hours-weekend" class="text-xs text-soft-beige/70">Minggu: 09.00 - 17.00 WITA</p>
+                <p id="display-hours-sameday" class="text-xs text-blush-pink pt-1 font-medium flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Pengiriman Same-Day Tersedia
+                </p>
+            </div>
+
+            <div class="space-y-3">
+                <h4 class="font-serif font-bold text-lg text-white">Kontak & Lokasi</h4>
+                <p id="display-store-address" class="text-xs text-soft-beige/70 flex items-start gap-2">
+                    <i data-lucide="map-pin" class="w-4 h-4 shrink-0 text-blush-pink mt-0.5"></i>
+                    Jl. Floral Delight No. 88, Denpasar, Bali
+                </p>
+                <a id="display-store-phone-link" href="https://wa.me/6287833218502" target="_blank" class="text-xs text-soft-beige/70 flex items-center gap-2 hover:text-orange-cta transition-colors">
+                    <i data-lucide="phone" class="w-4 h-4 text-blush-pink"></i>
+                    <span id="display-store-phone">+62 878-3321-8502</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 mt-8 pt-6 border-t border-taupe/20 flex flex-col sm:flex-row items-center justify-between text-[11px] text-soft-beige/75 gap-3">
+            <span>© 2026 AUSTIVE BLOOM FLORIST. Hak Cipta Dilindungi.</span>
+            <button id="adminLoginFooterBtn" onclick="openAdminLoginModal()" class="hover:text-blush-pink underline transition-colors flex items-center gap-1">
+                <i data-lucide="lock" class="w-3 h-3"></i> Login Admin Toko
+            </button>
+        </div>
+    </footer>
+
+    <!-- Bottom Mobile Nav -->
+    <nav aria-label="Navigasi bawah" class="lg:hidden fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-taupe/15 py-2.5 px-6 z-40 flex justify-between items-center shadow-lg">
+        <button onclick="switchCategoryTab('fresh')" class="flex flex-col items-center gap-1 text-taupe hover:text-ink">
+            <i data-lucide="store" class="w-5 h-5"></i>
+            <span class="text-[10px] font-semibold">Katalog</span>
+        </button>
+        <button onclick="switchCategoryTab('custom')" class="flex flex-col items-center gap-1 text-taupe hover:text-ink">
+            <i data-lucide="wand-2" class="w-5 h-5"></i>
+            <span class="text-[10px] font-semibold">Custom</span>
+        </button>
+        <button onclick="openCart()" class="relative flex flex-col items-center gap-1 text-taupe hover:text-ink">
+            <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+            <span class="text-[10px] font-semibold">Keranjang</span>
+            <span id="mobileCartBadge" class="absolute -top-1 right-2 w-4 h-4 bg-orange-cta text-white font-bold text-[9px] rounded-full flex items-center justify-center hidden">0</span>
+        </button>
+    </nav>
+
+    <!-- Cart Drawer -->
+    <div id="cartDrawer" class="fixed inset-0 z-50 pointer-events-none transition-opacity duration-300 opacity-0">
+        <div id="cartBackdrop" onclick="closeCart()" class="absolute inset-0 bg-ink/60 backdrop-blur-xs transition-opacity duration-300 opacity-0"></div>
+        <div id="cartPanel" class="absolute top-0 right-0 bottom-0 w-full max-w-md bg-soft-beige shadow-floating transition-transform duration-300 transform translate-x-full flex flex-col pointer-events-auto">
+            <div class="p-4 border-b border-taupe/20 bg-white flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="shopping-bag" class="w-5 h-5 text-taupe"></i>
+                    <h3 class="font-serif font-bold text-xl text-ink">Keranjang Belanja</h3>
+                </div>
+                <button onclick="closeCart()" aria-label="Tutup keranjang" class="p-1 rounded-full hover:bg-taupe/10 text-ink">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+
+            <div class="px-4 py-3 bg-white border-b border-taupe/15">
+                <ol id="checkoutSteps" aria-label="Langkah checkout" class="flex items-center gap-2 text-[11px] font-semibold text-ink-muted">
+                    <li data-step="1" class="flex items-center gap-1.5 whitespace-nowrap"><span class="step-num w-5 h-5 rounded-full flex items-center justify-center text-[10px]">1</span>Keranjang</li>
+                    <li class="flex-1 h-px bg-taupe/25" aria-hidden="true"></li>
+                    <li data-step="2" class="flex items-center gap-1.5 whitespace-nowrap"><span class="step-num w-5 h-5 rounded-full flex items-center justify-center text-[10px]">2</span>Data</li>
+                    <li class="flex-1 h-px bg-taupe/25" aria-hidden="true"></li>
+                    <li data-step="3" class="flex items-center gap-1.5 whitespace-nowrap"><span class="step-num w-5 h-5 rounded-full flex items-center justify-center text-[10px]">3</span>Pembayaran</li>
+                </ol>
+            </div>
+
+            <div class="flex-grow overflow-y-auto p-4 space-y-4">
+                <div id="cartItemsList" class="space-y-3"></div>
+
+                <div id="recipientBox" class="bg-white p-4 dynamic-card border border-taupe/20 space-y-2.5 shadow-xs hidden">
+                    <div class="flex items-center gap-2 text-xs font-bold text-ink border-b border-taupe/10 pb-2">
+                        <i data-lucide="user" class="w-4 h-4 text-taupe"></i> Data Penerima
+                    </div>
+                    <div>
+                        <label for="recvName" class="block text-[10px] font-semibold text-ink-muted mb-1">Nama Penerima *</label>
+                        <input type="text" id="recvName" autocomplete="name" placeholder="Contoh: Ni Made Sari" onblur="validateFieldById('recvName')" oninput="updateCheckoutSteps()" class="w-full px-3 py-2.5 dynamic-btn border border-taupe/20 text-xs bg-soft-beige/40 focus:outline-none focus:ring-1 focus:ring-taupe">
+                    </div>
+                    <div>
+                        <label for="recvWA" class="block text-[10px] font-semibold text-ink-muted mb-1">Nomor WhatsApp *</label>
+                        <input type="tel" id="recvWA" autocomplete="tel" inputmode="tel" placeholder="08123456789" onblur="validateFieldById('recvWA')" oninput="updateCheckoutSteps()" class="w-full px-3 py-2.5 dynamic-btn border border-taupe/20 text-xs bg-soft-beige/40 focus:outline-none focus:ring-1 focus:ring-taupe">
+                    </div>
+                    <div>
+                        <label for="recvAddress" class="block text-[10px] font-semibold text-ink-muted mb-1">Alamat Lengkap *</label>
+                        <textarea id="recvAddress" rows="2" placeholder="Jalan, nomor rumah, kecamatan, kota" onblur="validateFieldById('recvAddress')" oninput="updateCheckoutSteps()" class="w-full px-3 py-2.5 dynamic-btn border border-taupe/20 text-xs bg-soft-beige/40 focus:outline-none focus:ring-1 focus:ring-taupe"></textarea>
+                    </div>
+                </div>
+
+                <div id="greetingCardBox" class="bg-white p-4 dynamic-card border border-taupe/20 space-y-2.5 shadow-xs hidden">
+                    <div class="flex items-center gap-2 text-xs font-bold text-ink border-b border-taupe/10 pb-2">
+                        <i data-lucide="mail" class="w-4 h-4 text-taupe"></i> Kartu Ucapan (Gratis)
+                    </div>
+                    <div class="grid grid-cols-2 gap-2">
+                        <input type="text" id="cardTo" placeholder="Untuk" class="px-3 py-2 dynamic-btn border border-taupe/20 text-xs bg-soft-beige/40 focus:outline-none focus:ring-1 focus:ring-taupe">
+                        <input type="text" id="cardFrom" placeholder="Dari" class="px-3 py-2 dynamic-btn border border-taupe/20 text-xs bg-soft-beige/40 focus:outline-none focus:ring-1 focus:ring-taupe">
+                    </div>
+                    <textarea id="cardMsg" rows="2" placeholder="Tulis pesan ucapan manis Anda di sini..." class="w-full px-3 py-2 dynamic-btn border border-taupe/20 text-xs bg-soft-beige/40 focus:outline-none focus:ring-1 focus:ring-taupe"></textarea>
+                    <button type="button" onclick="openAiGreeting()" class="w-full inline-flex items-center justify-center gap-1.5 py-2 rounded-lg border border-taupe/30 text-[11px] font-semibold text-ink hover:bg-taupe/5 min-h-[40px] transition-colors">
+                        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-orange-cta"></i> Buat Ucapan dengan AI
+                    </button>
+                </div>
+
+                <div id="deliveryScheduleBox" class="bg-white p-4 dynamic-card border border-taupe/20 space-y-2.5 shadow-xs hidden">
+                    <div class="flex items-center gap-2 text-xs font-bold text-ink border-b border-taupe/10 pb-2">
+                        <i data-lucide="truck" class="w-4 h-4 text-taupe"></i> Jadwal & Pembayaran
+                    </div>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div>
+                            <label class="block text-[10px] font-semibold text-ink-muted mb-1">Tanggal Kirim</label>
+                            <input type="date" id="deliveryDate" onchange="updateCheckoutSteps()" class="w-full px-2.5 py-2 dynamic-btn border border-taupe/20 text-xs bg-soft-beige/40 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-semibold text-ink-muted mb-1">Slot Waktu</label>
+                            <select id="deliverySlot" class="w-full px-2.5 py-2 dynamic-btn border border-taupe/20 text-xs bg-soft-beige/40 focus:outline-none">
+                                <option value="Pagi (09:00 - 12:00)">Pagi (09:00 - 12:00)</option>
+                                <option value="Siang (13:00 - 16:00)">Siang (13:00 - 16:00)</option>
+                                <option value="Sore (16:00 - 19:00)">Sore (16:00 - 19:00)</option>
+                            </select>
+                        </div>
+                    </div>
+                <div class="space-y-1.5 pt-1">
+                        <label class="block text-[10px] font-semibold text-ink-muted">Metode Pembayaran *</label>
+                        <div class="grid grid-cols-3 gap-2" role="radiogroup" aria-label="Metode pembayaran">
+                                <label class="cursor-pointer text-center py-2 px-2 dynamic-btn border border-taupe/20 text-xs font-medium bg-soft-beige/40 has-[:checked]:bg-ink has-[:checked]:text-white transition-all">
+                                    <input type="radio" name="cartPay" value="Cash" class="sr-only" onchange="updateCheckoutSteps()"> Cash
+                                </label>
+                                <label class="cursor-pointer text-center py-2 px-2 dynamic-btn border border-taupe/20 text-xs font-medium bg-soft-beige/40 has-[:checked]:bg-ink has-[:checked]:text-white transition-all">
+                                    <input type="radio" name="cartPay" value="Transfer" class="sr-only" onchange="updateCheckoutSteps()"> Transfer
+                                </label>
+                                <label class="cursor-pointer text-center py-2 px-2 dynamic-btn border border-taupe/20 text-xs font-medium bg-soft-beige/40 has-[:checked]:bg-ink has-[:checked]:text-white transition-all">
+                                    <input type="radio" name="cartPay" value="QRIS" class="sr-only" onchange="updateCheckoutSteps()"> QRIS
+                                </label>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+
+            <div class="p-4 border-t border-taupe/20 bg-white space-y-3">
+                <div class="flex justify-between items-center text-sm">
+                    <span class="text-ink-muted">Total Pembelian:</span>
+                    <span id="cartTotalPrice" class="font-serif font-bold text-2xl text-ink">Rp 0</span>
+                </div>
+                <button onclick="checkoutCartWA()" class="w-full bg-gradient-to-r from-orange-cta to-orange-hover hover:from-orange-hover hover:to-orange-cta text-white font-bold py-3.5 dynamic-btn shadow-md transition-all flex items-center justify-center gap-2 text-sm">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                    Checkout via WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Visual Editor & Gaya Drawer (Desain Mirip Web Builder Editor) -->
+    <div id="editorDrawer" class="fixed inset-0 z-50 pointer-events-none transition-opacity duration-300 opacity-0">
+        <div id="editorBackdrop" onclick="requestCancelEditor()" class="absolute inset-0 bg-black/50 backdrop-blur-xs transition-opacity duration-300 opacity-0"></div>
+        <div id="editorPanel" class="absolute top-0 right-0 bottom-0 w-full max-w-md bg-editor-dark text-white shadow-2xl transition-transform duration-300 transform translate-x-full flex flex-col pointer-events-auto border-l border-white/10 select-none">
+            
+            <!-- Top Toolbar Editor -->
+            <div class="px-4 py-3 bg-editor-dark border-b border-white/10 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <div class="w-7 h-7 rounded-lg bg-editor-accent/20 flex items-center justify-center text-editor-accent">
+                        <i data-lucide="layout" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                        <span class="font-bold text-xs tracking-wide block leading-none text-white">Editor Tampilan & Gaya</span>
+                        <span class="text-[10px] text-white/50">AUSTIVE BLOOM Studio</span>
+                    </div>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <button onclick="saveAllSettings()" class="px-3.5 py-1.5 bg-emerald-500 hover:bg-emerald-600 font-bold text-xs rounded-lg text-white transition-all shadow-md flex items-center gap-1">
+                        <i data-lucide="check" class="w-3.5 h-3.5"></i> Simpan
+                    </button>
+                    <button onclick="requestCancelEditor()" aria-label="Tutup panel editor" class="p-1.5 rounded-lg hover:bg-white/10 text-white/70">
+                        <i data-lucide="x" class="w-5 h-5"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tab Navigation Header Editor (Blocks, Gaya, Tema) -->
+            <div class="flex border-b border-white/10 bg-black/40 px-2 pt-2 gap-1 text-xs font-semibold">
+                <button id="editorTab-blocks" onclick="switchEditorTab('blocks')" class="flex-1 py-2 px-2 rounded-t-lg text-white/60 hover:text-white flex items-center justify-center gap-1.5 transition-all">
+                    <i data-lucide="grid" class="w-3.5 h-3.5"></i> + Blok
+                </button>
+                <button id="editorTab-gaya" onclick="switchEditorTab('gaya')" class="flex-1 py-2 px-2 rounded-t-lg bg-editor-card text-editor-accent border-t border-x border-white/10 flex items-center justify-center gap-1.5 transition-all">
+                    <i data-lucide="paint-brush" class="w-3.5 h-3.5"></i> 🎨 Gaya
+                </button>
+                <button id="editorTab-info" onclick="switchEditorTab('info')" class="flex-1 py-2 px-2 rounded-t-lg text-white/60 hover:text-white flex items-center justify-center gap-1.5 transition-all">
+                    <i data-lucide="settings" class="w-3.5 h-3.5"></i> ⚙️ Tema & Info
+                </button>
+            </div>
+
+            <!-- Panel Content Container -->
+            <div class="flex-grow overflow-y-auto p-4 space-y-4 text-xs">
+                
+                <!-- TAB 1: BLOCKS -->
+                <div id="editorContent-blocks" class="space-y-4 hidden animate-fade-in">
+                    <div class="bg-editor-card p-3.5 rounded-xl border border-white/10 space-y-2">
+                        <span class="text-[11px] text-white/70 font-bold block uppercase tracking-wider text-editor-accent">Elemen Halaman Toko</span>
+                        <p class="text-[11px] text-white/60">Pilih komponen di bawah untuk menyesuaikan tampilan atau membuka pengaturannya:</p>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-2.5">
+                        <div onclick="switchEditorTab('gaya')" class="bg-editor-card p-3 rounded-xl border border-white/10 hover:border-editor-accent cursor-pointer flex flex-col items-center text-center gap-2 transition-all group">
+                            <div class="w-9 h-9 rounded-lg bg-editor-accent/10 group-hover:bg-editor-accent group-hover:text-editor-dark flex items-center justify-center text-editor-accent transition-all">
+                                <i data-lucide="image" class="w-5 h-5"></i>
+                            </div>
+                            <span class="font-semibold text-white/90">Hero Latar Belakang</span>
+                        </div>
+                        <div onclick="switchEditorTab('gaya')" class="bg-editor-card p-3 rounded-xl border border-white/10 hover:border-editor-accent cursor-pointer flex flex-col items-center text-center gap-2 transition-all group">
+                            <div class="w-9 h-9 rounded-lg bg-editor-accent/10 group-hover:bg-editor-accent group-hover:text-editor-dark flex items-center justify-center text-editor-accent transition-all">
+                                <i data-lucide="type" class="w-5 h-5"></i>
+                            </div>
+                            <span class="font-semibold text-white/90">Teks & Tipografi</span>
+                        </div>
+                        <div onclick="openProductFromEditor()" class="bg-editor-card p-3 rounded-xl border border-white/10 hover:border-editor-accent cursor-pointer flex flex-col items-center text-center gap-2 transition-all group">
+                            <div class="w-9 h-9 rounded-lg bg-editor-accent/10 group-hover:bg-editor-accent group-hover:text-editor-dark flex items-center justify-center text-editor-accent transition-all">
+                                <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+                            </div>
+                            <span class="font-semibold text-white/90">Produk Katalog</span>
+                        </div>
+                        <div onclick="switchEditorTab('info')" class="bg-editor-card p-3 rounded-xl border border-white/10 hover:border-editor-accent cursor-pointer flex flex-col items-center text-center gap-2 transition-all group">
+                            <div class="w-9 h-9 rounded-lg bg-editor-accent/10 group-hover:bg-editor-accent group-hover:text-editor-dark flex items-center justify-center text-editor-accent transition-all">
+                                <i data-lucide="phone-call" class="w-5 h-5"></i>
+                            </div>
+                            <span class="font-semibold text-white/90">Kontak & Lokasi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 2: GAYA (STYLING PANEL SEPERTI GAMBAR CONTOH) -->
+                <div id="editorContent-gaya" class="space-y-4 animate-fade-in">
+                    
+                    <!-- Section: Hero Layout & Latar Belakang -->
+                    <div class="bg-editor-card p-4 rounded-xl border border-white/10 space-y-3.5">
+                        <div class="flex items-center justify-between">
+                            <h4 class="font-bold text-white uppercase tracking-wider text-[11px] text-editor-accent flex items-center gap-1.5">
+                                <i data-lucide="image" class="w-3.5 h-3.5"></i> Hero Latar Belakang
+                            </h4>
+                            <span class="text-[10px] text-white/40">Visual Banner</span>
+                        </div>
+
+                        <!-- Preset Banner -->
+                        <div>
+                            <span class="block text-white/70 text-[11px] mb-1.5">Preset Banner</span>
+                            <div id="heroPresetGrid" role="radiogroup" aria-label="Preset banner hero" class="grid grid-cols-4 gap-2"></div>
+                        </div>
+
+                        <!-- Unggah dari Galeri/HP / URL -->
+                        <div class="space-y-2">
+                            <label class="block text-white/70 text-[11px]">Sumber Gambar Latar:</label>
+                            <input type="file" id="styleHeroImgFile" accept="image/*" onchange="handleHeroBgFileUpload(event)" class="w-full text-[11px] text-white/80 file:mr-2 file:py-1 px-1 file:px-2.5 file:rounded-lg file:border-0 file:text-[10px] file:font-semibold file:bg-editor-accent/20 file:text-editor-accent hover:file:bg-editor-accent hover:file:text-editor-dark cursor-pointer border border-white/10 rounded-lg bg-black/30">
+                            
+                            <input type="url" id="styleHeroBgUrl" oninput="updateHeroStyleLive()" placeholder="https://images.unsplash.com/..." class="w-full px-3 py-2 rounded-lg bg-black/40 border border-white/10 text-white text-xs focus:outline-none focus:border-editor-accent placeholder:text-white/30">
+                        </div>
+
+                        <!-- Posisi Gambar -->
+                        <div class="grid grid-cols-2 gap-2">
+                            <div>
+                                <label class="block text-white/70 text-[11px] mb-1">Posisi Gambar</label>
+                                <select id="styleHeroBgPos" onchange="updateHeroStyleLive()" class="w-full px-2.5 py-1.5 rounded-lg bg-black/40 border border-white/10 text-white text-xs focus:outline-none focus:border-editor-accent">
+                                    <option value="center 35%">Tengah (Default)</option>
+                                    <option value="center top">Atas</option>
+                                    <option value="center bottom">Bawah</option>
+                                    <option value="center center">Tengah 50%</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-white/70 text-[11px] mb-1">Tinggi Banner</label>
+                                <select id="styleHeroHeight" onchange="updateHeroStyleLive()" class="w-full px-2.5 py-1.5 rounded-lg bg-black/40 border border-white/10 text-white text-xs focus:outline-none focus:border-editor-accent">
+                                    <option value="22rem">Kecil (350px)</option>
+                                    <option value="28rem">Sedang (450px)</option>
+                                    <option value="34rem">Tinggi (550px)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Efek Blur Background Slider -->
+                        <div class="space-y-1">
+                            <div class="flex justify-between text-[11px]">
+                                <span class="text-white/70">Efek Blur Latar</span>
+                                <span id="valBlur" class="text-editor-accent font-bold">0px</span>
+                            </div>
+                            <input type="range" id="styleHeroBlur" min="0" max="10" step="1" value="0" oninput="updateHeroStyleLive()" class="w-full accent-editor-accent cursor-pointer h-1.5 bg-black/50 rounded-lg">
+                        </div>
+
+                        <!-- Overlay Transparansi Warna Latar -->
+                        <div class="space-y-1">
+                            <div class="flex justify-between text-[11px]">
+                                <span class="text-white/70">Kegelapan Overlay</span>
+                                <span id="valOverlay" class="text-editor-accent font-bold">55%</span>
+                            </div>
+                            <input type="range" id="styleHeroOverlay" min="0" max="90" step="5" value="55" oninput="updateHeroStyleLive()" class="w-full accent-editor-accent cursor-pointer h-1.5 bg-black/50 rounded-lg">
+                        </div>
+                    </div>
+
+                    <!-- Section: Tipografi & Warna Teks -->
+                    <div class="bg-editor-card p-4 rounded-xl border border-white/10 space-y-3">
+                        <h4 class="font-bold text-white uppercase tracking-wider text-[11px] text-editor-accent flex items-center gap-1.5">
+                            <i data-lucide="type" class="w-3.5 h-3.5"></i> Tipografi & Teks Hero
+                        </h4>
+
+                        <div>
+                            <label class="block text-white/70 text-[11px] mb-1">Judul Utama Hero</label>
+                            <input type="text" id="edit-hero-title" oninput="updateHeroTextsLive()" class="w-full px-3 py-2 rounded-lg bg-black/40 border border-white/10 text-white focus:outline-none focus:border-editor-accent">
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-2">
+                            <div>
+                                <label class="block text-white/70 text-[11px] mb-1">Ukuran Judul</label>
+                                <select id="styleHeroTitleSize" onchange="updateHeroStyleLive()" class="w-full px-2.5 py-1.5 rounded-lg bg-black/40 border border-white/10 text-white text-xs focus:outline-none focus:border-editor-accent">
+                                    <option value="2.5rem">Sedang (2.5rem)</option>
+                                    <option value="3.5rem">Besar (3.5rem)</option>
+                                    <option value="4.5rem">Ekstra (4.5rem)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-white/70 text-[11px] mb-1">Warna Judul</label>
+                                <input type="color" id="styleHeroTitleColor" value="#ffffff" oninput="updateHeroStyleLive()" class="w-full h-8 rounded-lg bg-black/40 border border-white/10 cursor-pointer p-0.5">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-white/70 text-[11px] mb-1">Teks Slogan (Font Script)</label>
+                            <input type="text" id="edit-hero-script" oninput="updateHeroTextsLive()" class="w-full px-3 py-2 rounded-lg bg-black/40 border border-white/10 text-white focus:outline-none focus:border-editor-accent">
+                        </div>
+
+                        <div>
+                            <label class="block text-white/70 text-[11px] mb-1">Deskripsi Subjudul</label>
+                            <textarea id="edit-hero-subtitle" rows="2" oninput="updateHeroTextsLive()" class="w-full px-3 py-2 rounded-lg bg-black/40 border border-white/10 text-white focus:outline-none focus:border-editor-accent text-xs"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Section: Layout UI & Form Shape Radius -->
+                    <div class="bg-editor-card p-4 rounded-xl border border-white/10 space-y-3">
+                        <h4 class="font-bold text-white uppercase tracking-wider text-[11px] text-editor-accent flex items-center gap-1.5">
+                            <i data-lucide="sliders" class="w-3.5 h-3.5"></i> Bentuk & Sudut
+                        </h4>
+
+                        <div class="grid grid-cols-2 gap-2">
+                            <div>
+                                <label class="block text-white/70 text-[11px] mb-1">Radius Kartu Produk</label>
+                                <select id="styleCardRadius" onchange="updateGlobalShapesLive()" class="w-full px-2.5 py-1.5 rounded-lg bg-black/40 border border-white/10 text-white text-xs focus:outline-none">
+                                    <option value="8px">Tajam (8px)</option>
+                                    <option value="16px">Bulat Sedang (16px)</option>
+                                    <option value="24px">Sangat Bulat (24px)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-white/70 text-[11px] mb-1">Radius Tombol</label>
+                                <select id="styleBtnRadius" onchange="updateGlobalShapesLive()" class="w-full px-2.5 py-1.5 rounded-lg bg-black/40 border border-white/10 text-white text-xs focus:outline-none">
+                                    <option value="6px">Sedikit (6px)</option>
+                                    <option value="12px">Sedang (12px)</option>
+                                    <option value="9999px">Kapsul</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 3: INFO & TEMA PRESET -->
+                <div id="editorContent-info" class="space-y-4 hidden animate-fade-in">
+                    
+                    <!-- Presets Tema Warna Web -->
+                    <div class="bg-editor-card p-4 rounded-xl border border-white/10 space-y-2.5">
+                        <h4 class="font-bold text-white uppercase tracking-wider text-[11px] text-editor-accent flex items-center gap-1.5">
+                            <i data-lucide="droplet" class="w-3.5 h-3.5"></i> Preset Warna Toko
+                        </h4>
+                        <div class="grid grid-cols-2 gap-2 pt-1">
+                            <button onclick="applyThemePreset('warm')" class="p-2.5 rounded-lg bg-black/40 border border-white/10 hover:border-editor-accent text-left flex items-center gap-2">
+                                <span class="w-4 h-4 rounded-full bg-[#FBF7F4] border border-gray-400 shrink-0"></span>
+                                <span class="text-[11px] text-white font-medium">Krem Hangat</span>
+                            </button>
+                            <button onclick="applyThemePreset('blush')" class="p-2.5 rounded-lg bg-black/40 border border-white/10 hover:border-editor-accent text-left flex items-center gap-2">
+                                <span class="w-4 h-4 rounded-full bg-[#FFF0F2] border border-rose-300 shrink-0"></span>
+                                <span class="text-[11px] text-white font-medium">Blush Romantis</span>
+                            </button>
+                            <button onclick="applyThemePreset('dark')" class="p-2.5 rounded-lg bg-black/40 border border-white/10 hover:border-editor-accent text-left flex items-center gap-2">
+                                <span class="w-4 h-4 rounded-full bg-[#1A1817] shrink-0"></span>
+                                <span class="text-[11px] text-white font-medium">Gelap Modern</span>
+                            </button>
+                            <button onclick="applyThemePreset('emerald')" class="p-2.5 rounded-lg bg-black/40 border border-white/10 hover:border-editor-accent text-left flex items-center gap-2">
+                                <span class="w-4 h-4 rounded-full bg-[#064E3B] shrink-0"></span>
+                                <span class="text-[11px] text-white font-medium">Emerald Mewah</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-editor-card p-4 rounded-xl border border-white/10 space-y-3">
+                        <h4 class="font-bold text-white uppercase tracking-wider text-[11px] text-editor-accent flex items-center gap-1.5">
+                            <i data-lucide="building" class="w-3.5 h-3.5"></i> Identitas Toko
+                        </h4>
+                        <div>
+                            <label class="block text-white/70 text-[11px] mb-1">Nama Studio / Toko</label>
+                            <input type="text" id="edit-store-name" oninput="updateStoreInfosLive()" class="w-full px-3 py-2 rounded-lg bg-black/40 border border-white/10 text-white focus:outline-none focus:border-editor-accent">
+                        </div>
+                        <div>
+                            <label class="block text-white/70 text-[11px] mb-1">Tagline Singkat</label>
+                            <input type="text" id="edit-store-tagline" oninput="updateStoreInfosLive()" class="w-full px-3 py-2 rounded-lg bg-black/40 border border-white/10 text-white focus:outline-none focus:border-editor-accent">
+                        </div>
+                    </div>
+
+                    <div class="bg-editor-card p-4 rounded-xl border border-white/10 space-y-3">
+                        <h4 class="font-bold text-white uppercase tracking-wider text-[11px] text-editor-accent flex items-center gap-1.5">
+                            <i data-lucide="phone-call" class="w-3.5 h-3.5"></i> Kontak & WhatsApp Checkout
+                        </h4>
+                        <div>
+                            <label class="block text-white/70 text-[11px] mb-1">Nomor WhatsApp Checkout (tanpa +)</label>
+                            <input type="text" id="edit-store-phone" class="w-full px-3 py-2 rounded-lg bg-black/40 border border-white/10 text-white focus:outline-none focus:border-editor-accent">
+                        </div>
+                        <div>
+                            <label class="block text-white/70 text-[11px] mb-1">Alamat Toko Lengkap</label>
+                            <textarea id="edit-store-address" rows="2" class="w-full px-3 py-2 rounded-lg bg-black/40 border border-white/10 text-white focus:outline-none focus:border-editor-accent text-xs"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Editor Footer Toolbar: status, Batal, Simpan -->
+            <div class="p-3 bg-black/50 border-t border-white/10 space-y-2.5">
+                <div class="flex items-center justify-between text-[11px]">
+                    <span id="editorDirtyStatus" class="text-white/60 flex items-center gap-1.5" aria-live="polite">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Tersimpan
+                    </span>
+                    <button onclick="resetStylesToDefault()" class="text-white/60 hover:text-red-400 transition-colors flex items-center gap-1 min-h-[32px]">
+                        <i data-lucide="rotate-ccw" class="w-3 h-3"></i> Reset Default
+                    </button>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                    <button onclick="requestCancelEditor()" class="py-2.5 rounded-xl border border-white/20 text-white/85 hover:bg-white/10 text-xs font-semibold min-h-[44px] transition-colors">Batal</button>
+                    <button onclick="saveAllSettings()" class="py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-bold min-h-[44px] shadow-md transition-colors flex items-center justify-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5"></i> Simpan Perubahan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Login Modal -->
+    <div id="adminLoginModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-ink/60 backdrop-blur-xs hidden animate-fade-in">
+        <div class="bg-white rounded-3xl max-w-sm w-full p-6 shadow-floating border border-taupe/20 relative">
+            <button onclick="closeAdminLoginModal()" aria-label="Tutup" class="absolute top-4 right-4 p-1 rounded-full hover:bg-taupe/10 text-ink">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 rounded-full bg-taupe/10 text-taupe flex items-center justify-center mx-auto mb-2">
+                    <i data-lucide="lock" class="w-6 h-6"></i>
+                </div>
+                <h3 class="font-serif font-bold text-2xl text-ink">Login Admin Toko</h3>
+                <p class="text-xs text-ink-muted">Gunakan akun Google admin toko</p>
+            </div>
+
+            <div class="space-y-4">
+                <p class="text-xs text-ink-muted text-center">Hanya akun Google admin toko yang dapat masuk.</p>
+                <div id="adminLoginError" class="hidden"></div>
+                <button type="button" onclick="signInAdminGoogle()" class="w-full py-3 rounded-xl bg-white border border-taupe/30 hover:bg-taupe/5 font-semibold text-sm text-ink shadow-xs transition-colors flex items-center justify-center gap-2 min-h-[44px]">
+                    <i data-lucide="log-in" class="w-4 h-4 text-orange-cta"></i> Masuk dengan Google
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Form Modal -->
+    <div id="productFormModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-ink/60 backdrop-blur-xs hidden animate-fade-in overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 shadow-floating border border-taupe/20 relative my-8">
+            <button onclick="closeProductFormModal()" aria-label="Tutup" class="absolute top-4 right-4 p-1 rounded-full hover:bg-taupe/10 text-ink">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+
+            <div class="mb-5">
+                <span class="text-xs uppercase tracking-wider font-semibold text-orange-cta">Panel Admin Toko</span>
+                <h3 id="productFormTitle" class="font-serif font-bold text-2xl text-ink">Tambah Produk Baru</h3>
+            </div>
+
+            <form onsubmit="saveProduct(event)" class="space-y-4" novalidate>
+                <input type="hidden" id="editProdId">
+
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-ink-muted mb-1">Nama Produk</label>
+                    <input type="text" id="prodName" required placeholder="Contoh: Coral Peony Dream" class="w-full px-3.5 py-2.5 rounded-xl border border-taupe/30 text-sm focus:outline-none focus:ring-2 focus:ring-taupe">
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-ink-muted mb-1">Harga (Rp)</label>
+                        <input type="number" id="prodPrice" required min="0" step="any" inputmode="numeric" placeholder="185000" class="w-full px-3.5 py-2.5 rounded-xl border border-taupe/30 text-sm focus:outline-none focus:ring-2 focus:ring-taupe">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-ink-muted mb-1">Kategori</label>
+                        <select id="prodCat" required class="w-full px-3.5 py-2.5 rounded-xl border border-taupe/30 text-sm focus:outline-none focus:ring-2 focus:ring-taupe">
+                            <option value="fresh">Bunga Segar</option>
+                            <option value="artificial">Bunga Artificial</option>
+                            <option value="gift">Hampers & Snack</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Label Produk -->
+                <div>
+                    <label for="prodBadge" class="block text-xs font-semibold uppercase text-ink-muted mb-1">Label Produk</label>
+                    <select id="prodBadge" class="w-full px-3.5 py-2.5 rounded-xl border border-taupe/30 text-sm focus:outline-none focus:ring-2 focus:ring-taupe">
+                        <option value="">Tanpa label</option>
+                        <option value="baru">Baru</option>
+                        <option value="terbatas">Stok Terbatas</option>
+                    </select>
+                </div>
+
+                <!-- Galeri Foto Produk (maks 8) -->
+                <div class="space-y-2">
+                    <div class="flex items-center justify-between">
+                        <span class="block text-xs font-semibold uppercase text-ink-muted">Galeri Foto (maks 8)</span>
+                        <span id="galleryCount" class="text-[11px] font-semibold text-ink-muted">0/8</span>
+                    </div>
+                    <p class="text-[11px] text-ink-muted">Foto pertama menjadi <strong>Cover</strong>. Gunakan panah untuk mengatur urutan.</p>
+
+                    <div id="galleryGrid" class="grid grid-cols-3 sm:grid-cols-4 gap-2" aria-live="polite"></div>
+                    <div id="galleryEmpty" class="rounded-xl border border-dashed border-taupe/40 p-4 text-center text-[11px] text-ink-muted">Belum ada foto. Unggah atau tambahkan URL di bawah.</div>
+
+                    <div>
+                        <label for="prodImgFile" class="block text-[11px] font-medium text-ink-muted mb-1">Unggah dari Galeri / HP (bisa lebih dari satu):</label>
+                        <input type="file" id="prodImgFile" accept="image/*" multiple onchange="handleGalleryFiles(event)" class="w-full text-xs text-ink file:mr-3 file:py-2 file:px-3 file:rounded-xl file:border-0 file:text-xs file:font-semibold file:bg-taupe/10 file:text-ink hover:file:bg-taupe/20 cursor-pointer border border-taupe/30 rounded-xl p-1">
+                    </div>
+
+                    <div>
+                        <label for="galleryUrlInput" class="block text-[11px] font-medium text-ink-muted mb-1">Atau tambahkan URL foto:</label>
+                        <div class="flex gap-2">
+                            <input type="text" id="galleryUrlInput" autocomplete="off" placeholder="https://images.unsplash.com/..." class="flex-1 min-w-0 px-3.5 py-2.5 rounded-xl border border-taupe/30 text-sm focus:outline-none focus:ring-2 focus:ring-taupe">
+                            <button type="button" onclick="addGalleryUrl()" class="px-3.5 rounded-xl bg-ink text-white text-xs font-semibold min-h-[44px] hover:bg-ink-muted transition-colors">Tambah</button>
+                        </div>
+                    </div>
+                    <p id="galleryError" class="hidden text-[11px] text-red-600 font-medium" role="alert"></p>
+                </div>
+
+                <div class="pt-2 flex gap-2">
+                    <button type="button" onclick="closeProductFormModal()" class="flex-1 py-3 rounded-xl border border-taupe/30 font-semibold text-xs text-ink-muted hover:bg-taupe/10 transition-colors">Batal</button>
+                    <button type="submit" class="flex-1 py-3 rounded-xl bg-orange-cta hover:bg-orange-hover font-semibold text-xs text-white shadow-md transition-colors">Simpan Produk</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dashboard Daftar Pesanan (admin) -->
+    <div id="ordersModal" class="fixed inset-0 z-[55] hidden bg-ink/60 backdrop-blur-xs" role="dialog" aria-modal="true" aria-labelledby="ordersTitle">
+        <div class="absolute inset-0 flex items-end sm:items-center justify-center sm:p-4">
+            <div class="bg-soft-beige w-full sm:max-w-5xl h-[92vh] sm:h-[88vh] rounded-t-3xl sm:rounded-3xl shadow-floating flex flex-col overflow-hidden">
+                <div class="px-5 py-4 bg-white border-b border-taupe/15 flex items-center justify-between gap-3">
+                    <div>
+                        <span class="text-[11px] uppercase tracking-wider font-semibold text-orange-cta">Panel Admin</span>
+                        <h3 id="ordersTitle" class="type-h2 text-ink">Daftar Pesanan</h3>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span id="ordersTotalCount" class="text-xs text-ink-muted"></span>
+                        <button onclick="closeOrdersDashboard()" aria-label="Tutup daftar pesanan" class="p-2 rounded-full hover:bg-taupe/10 text-ink min-w-[44px] min-h-[44px] flex items-center justify-center">
+                            <i data-lucide="x" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="px-4 py-3 bg-white border-b border-taupe/15">
+                    <div id="ordersFilterTabs" role="tablist" aria-label="Filter status pesanan" class="flex gap-2 overflow-x-auto no-scrollbar"></div>
+                </div>
+
+                <div class="flex-grow overflow-y-auto p-4">
+                    <div id="ordersEmpty" class="hidden py-16 text-center text-ink-muted">
+                        <i data-lucide="inbox" class="w-10 h-10 mx-auto text-taupe/40 mb-3"></i>
+                        <p class="text-sm">Belum ada pesanan pada status ini.</p>
+                    </div>
+                    <div id="ordersCards" class="lg:hidden space-y-3"></div>
+                    <div id="ordersTableWrap" class="hidden lg:block overflow-x-auto bg-white rounded-2xl border border-taupe/15">
+                        <table class="w-full text-xs">
+                            <thead class="bg-soft-beige/60 text-ink-muted text-left">
+                                <tr>
+                                    <th scope="col" class="px-3 py-2.5 font-semibold">Pesanan</th>
+                                    <th scope="col" class="px-3 py-2.5 font-semibold">Pelanggan</th>
+                                    <th scope="col" class="px-3 py-2.5 font-semibold">Rincian</th>
+                                    <th scope="col" class="px-3 py-2.5 font-semibold">Total / Budget</th>
+                                    <th scope="col" class="px-3 py-2.5 font-semibold">Status</th>
+                                    <th scope="col" class="px-3 py-2.5 font-semibold text-right">Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ordersTableBody" class="divide-y divide-taupe/10"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal AI: Sommelier & Kartu Ucapan -->
+    <div id="aiModal" class="fixed inset-0 z-[60] hidden bg-ink/60 backdrop-blur-xs" role="dialog" aria-modal="true" aria-labelledby="aiModalTitle">
+        <div class="absolute inset-0 flex items-end sm:items-center justify-center sm:p-4">
+            <div class="bg-white w-full sm:max-w-lg max-h-[92vh] rounded-t-3xl sm:rounded-3xl shadow-floating flex flex-col overflow-hidden border border-taupe/20">
+                <div class="px-5 py-4 border-b border-taupe/15 flex items-center justify-between gap-3">
+                    <h3 id="aiModalTitle" class="type-h2 text-ink">Asisten AI</h3>
+                    <button onclick="closeAiModal()" aria-label="Tutup" class="p-2 rounded-full hover:bg-taupe/10 text-ink min-w-[44px] min-h-[44px] flex items-center justify-center">
+                        <i data-lucide="x" class="w-5 h-5"></i>
+                    </button>
+                </div>
+                <div id="aiModalBody" class="p-5 overflow-y-auto space-y-4 text-sm"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Konfirmasi (pengganti confirm() bawaan browser) -->
+    <div id="confirmModal" class="fixed inset-0 z-[80] flex items-center justify-center p-4 bg-ink/60 backdrop-blur-xs hidden" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
+        <div class="bg-white rounded-3xl max-w-sm w-full p-6 shadow-floating border border-taupe/20">
+            <h3 id="confirmTitle" class="font-serif font-bold text-xl text-ink mb-2">Konfirmasi</h3>
+            <p id="confirmText" class="text-sm text-ink-muted mb-5"></p>
+            <div class="flex gap-2">
+                <button type="button" id="confirmCancelBtn" class="flex-1 py-3 rounded-xl border border-taupe/30 font-semibold text-xs text-ink-muted hover:bg-taupe/10 transition-colors">Batal</button>
+                <button type="button" id="confirmOkBtn" class="flex-1 py-3 rounded-xl bg-orange-cta hover:bg-orange-hover font-semibold text-xs text-white shadow-md transition-colors">Ya, Lanjutkan</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" role="status" aria-live="polite" class="fixed top-4 left-1/2 -translate-x-1/2 z-[70] flex flex-col items-center gap-2 pointer-events-none w-[calc(100%-2rem)] max-w-sm"></div>
+
+    <!-- JavaScript App Logic -->
+    <script>
+
+        const DEFAULT_STORE = {
+            name: "AUSTIVE BLOOM",
+            tagline: "Studio Bunga",
+            heroBadge: "Studio Bunga Premium & Hadiah",
+            heroScript: "Bunga Mekar Cerita Kita",
+            heroTitle: "AUSTIVE BLOOM",
+            heroSubtitle: "Rangkaian bunga segar, artificial pilihan, dan hampers elegan yang dirangkai khusus untuk momen paling berharga Anda.",
+            hoursWeekday: "Senin - Sabtu: 08.00 - 20.00 WITA",
+            hoursWeekend: "Minggu: 09.00 - 17.00 WITA",
+            phone: "6287833218502",
+            address: "Jl. Floral Delight No. 88, Denpasar, Bali"
+        };
+        let storeConfig = { ...DEFAULT_STORE };
+
+        const DEFAULT_STYLE = {
+            heroBgUrl: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1600&auto=format&fit=crop",
+            heroBgPos: "center 35%",
+            heroHeight: "28rem",
+            heroBlur: "0px",
+            heroOverlayOpacity: 0.55,
+            heroTitleSize: "3.5rem",
+            heroTitleColor: "#FFFFFF",
+            cardRadius: "16px",
+            btnRadius: "12px",
+            theme: "warm"
+        };
+        let styleConfig = { ...DEFAULT_STYLE };
+
+        let isAdminLoggedIn = false;
+
+        let productsData = { fresh: [], artificial: [], gift: [] };
+        let productsLoaded = false;
+        let cart = [];
+
+        function applyStyleConfigToDOM() {
+            document.documentElement.style.setProperty('--hero-bg-url', `url('${styleConfig.heroBgUrl}')`);
+            document.documentElement.style.setProperty('--hero-bg-pos', styleConfig.heroBgPos);
+            document.documentElement.style.setProperty('--hero-height', styleConfig.heroHeight);
+            document.documentElement.style.setProperty('--hero-bg-blur', styleConfig.heroBlur);
+            document.documentElement.style.setProperty('--hero-overlay-color', `rgba(44, 34, 30, ${styleConfig.heroOverlayOpacity})`);
+            document.documentElement.style.setProperty('--hero-title-size', styleConfig.heroTitleSize);
+            document.documentElement.style.setProperty('--hero-title-color', styleConfig.heroTitleColor);
+            document.documentElement.style.setProperty('--card-radius', styleConfig.cardRadius);
+            document.documentElement.style.setProperty('--btn-radius', styleConfig.btnRadius);
+        }
+
+        function updateUIStoreInfo() {
+            document.getElementById('display-store-name').textContent = storeConfig.name;
+            document.getElementById('display-footer-name').textContent = storeConfig.name;
+            document.getElementById('display-store-tagline').textContent = storeConfig.tagline;
+
+            document.getElementById('display-hero-badge').textContent = storeConfig.heroBadge;
+            document.getElementById('display-hero-script').textContent = storeConfig.heroScript;
+            document.getElementById('display-hero-title').textContent = storeConfig.heroTitle;
+            document.getElementById('display-hero-subtitle').textContent = storeConfig.heroSubtitle;
+
+            document.getElementById('display-hours-weekday').textContent = storeConfig.hoursWeekday;
+            document.getElementById('display-hours-weekend').textContent = storeConfig.hoursWeekend;
+
+            document.getElementById('display-store-address').innerHTML = `<i data-lucide="map-pin" class="w-4 h-4 shrink-0 text-blush-pink mt-0.5"></i> ${escapeHtml(storeConfig.address)}`;
+            document.getElementById('display-store-phone').textContent = `+${storeConfig.phone}`;
+            document.getElementById('display-store-phone-link').href = `https://wa.me/${storeConfig.phone}`;
+
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+        }
+
+        function populateEditorInputs() {
+            document.getElementById('edit-store-name').value = storeConfig.name;
+            document.getElementById('edit-store-tagline').value = storeConfig.tagline;
+            document.getElementById('edit-hero-title').value = storeConfig.heroTitle;
+            document.getElementById('edit-hero-script').value = storeConfig.heroScript;
+            document.getElementById('edit-hero-subtitle').value = storeConfig.heroSubtitle;
+            document.getElementById('edit-store-phone').value = storeConfig.phone;
+            document.getElementById('edit-store-address').value = storeConfig.address;
+
+            document.getElementById('styleHeroBgUrl').value = styleConfig.heroBgUrl;
+            document.getElementById('styleHeroBgPos').value = styleConfig.heroBgPos;
+            document.getElementById('styleHeroHeight').value = styleConfig.heroHeight;
+            document.getElementById('styleHeroBlur').value = parseInt(styleConfig.heroBlur) || 0;
+            document.getElementById('valBlur').textContent = styleConfig.heroBlur;
+
+            const opacityVal = Math.round(styleConfig.heroOverlayOpacity * 100);
+            document.getElementById('styleHeroOverlay').value = opacityVal;
+            document.getElementById('valOverlay').textContent = opacityVal + '%';
+
+            document.getElementById('styleHeroTitleSize').value = styleConfig.heroTitleSize;
+            document.getElementById('styleHeroTitleColor').value = styleConfig.heroTitleColor;
+            document.getElementById('styleCardRadius').value = styleConfig.cardRadius;
+            document.getElementById('styleBtnRadius').value = styleConfig.btnRadius;
+        }
+
+        function updateHeroStyleLive() {
+            const url = document.getElementById('styleHeroBgUrl').value.trim();
+            const pos = document.getElementById('styleHeroBgPos').value;
+            const height = document.getElementById('styleHeroHeight').value;
+            const blurVal = document.getElementById('styleHeroBlur').value + 'px';
+            const overlayVal = (document.getElementById('styleHeroOverlay').value / 100).toFixed(2);
+            const titleSize = document.getElementById('styleHeroTitleSize').value;
+            const titleColor = document.getElementById('styleHeroTitleColor').value;
+
+            document.getElementById('valBlur').textContent = blurVal;
+            document.getElementById('valOverlay').textContent = document.getElementById('styleHeroOverlay').value + '%';
+
+            styleConfig.heroBgUrl = url || styleConfig.heroBgUrl;
+            styleConfig.heroBgPos = pos;
+            styleConfig.heroHeight = height;
+            styleConfig.heroBlur = blurVal;
+            styleConfig.heroOverlayOpacity = parseFloat(overlayVal);
+            styleConfig.heroTitleSize = titleSize;
+            styleConfig.heroTitleColor = titleColor;
+
+            applyStyleConfigToDOM();
+        }
+
+        function updateHeroTextsLive() {
+            const title = document.getElementById('edit-hero-title').value;
+            const script = document.getElementById('edit-hero-script').value;
+            const subtitle = document.getElementById('edit-hero-subtitle').value;
+
+            storeConfig.heroTitle = title;
+            storeConfig.heroScript = script;
+            storeConfig.heroSubtitle = subtitle;
+
+            document.getElementById('display-hero-title').textContent = title;
+            document.getElementById('display-hero-script').textContent = script;
+            document.getElementById('display-hero-subtitle').textContent = subtitle;
+        }
+
+        function updateStoreInfosLive() {
+            storeConfig.name = document.getElementById('edit-store-name').value;
+            storeConfig.tagline = document.getElementById('edit-store-tagline').value;
+            document.getElementById('display-store-name').textContent = storeConfig.name;
+            document.getElementById('display-footer-name').textContent = storeConfig.name;
+            document.getElementById('display-store-tagline').textContent = storeConfig.tagline;
+        }
+
+        function updateGlobalShapesLive() {
+            styleConfig.cardRadius = document.getElementById('styleCardRadius').value;
+            styleConfig.btnRadius = document.getElementById('styleBtnRadius').value;
+            applyStyleConfigToDOM();
+        }
+
+        async function handleHeroBgFileUpload(event) {
+            const input = event.target;
+            const file = input.files && input.files[0];
+            if (!file) return;
+            if (!requireAdmin()) { input.value = ""; return; }
+
+            showToast("Mengunggah banner...", "info");
+            try {
+                const dataUrl = await compressImageFile(file, 1600, 0.75);
+                const url = await window.fbUploadImage(dataUrlToBlob(dataUrl), `settings/hero-${Date.now()}.jpg`);
+                document.getElementById('styleHeroBgUrl').value = url;
+                updateHeroStyleLive();
+                updateEditorDirty();
+                showToast("Banner terunggah. Klik Simpan Perubahan untuk menerapkan.", "success");
+            } catch (err) {
+                console.error(err);
+                showToast(errorMessageFrom(err, "Banner gagal diunggah."), "error");
+            } finally {
+                input.value = "";
+            }
+        }
+
+        const THEME_PRESETS = {
+            warm:    { bg: '#FBF7F4', rgbBg: '251 247 244', card: '#F3ECE7', rgbCard: '243 236 231', text: '#2C221E', rgbText: '44 34 30' },
+            blush:   { bg: '#FFF0F2', rgbBg: '255 240 242', card: '#FCE4E8', rgbCard: '252 228 232', text: '#3A1F25', rgbText: '58 31 37' },
+            dark:    { bg: '#181615', rgbBg: '24 22 21',    card: '#262321', rgbCard: '38 35 33',    text: '#F5EFEA', rgbText: '245 239 234' },
+            emerald: { bg: '#F2F9F6', rgbBg: '242 249 246', card: '#E1F2EC', rgbCard: '225 242 236', text: '#093627', rgbText: '9 54 39' }
+        };
+
+        function applyThemePreset(presetKey) {
+            const key = THEME_PRESETS[presetKey] ? presetKey : 'warm';
+            const p = THEME_PRESETS[key];
+            styleConfig.theme = key;
+
+            const root = document.documentElement;
+            root.style.setProperty('--bg-main', p.bg);
+            root.style.setProperty('--bg-card', p.card);
+            root.style.setProperty('--text-main', p.text);
+            root.style.setProperty('--rgb-bg-main', p.rgbBg);
+            root.style.setProperty('--rgb-bg-card', p.rgbCard);
+            root.style.setProperty('--rgb-ink', p.rgbText);
+
+            if (key === 'dark') root.setAttribute('data-theme', 'dark');
+            else root.removeAttribute('data-theme');
+        }
+
+        async function saveAllSettings() {
+            if (!requireAdmin()) return;
+            const prevStore = JSON.stringify(storeConfig);
+            const prevStyle = JSON.stringify(styleConfig);
+            storeConfig.phone = document.getElementById('edit-store-phone').value.trim().replace(/[^0-9]/g, '');
+            storeConfig.address = document.getElementById('edit-store-address').value.trim();
+            try {
+                await window.fbSaveSettings(storeConfig, styleConfig);
+                editorSnapshot = JSON.stringify({ store: storeConfig, style: styleConfig });
+                closeEditorDrawer();
+                showToast("Pengaturan tersimpan dan berlaku untuk semua perangkat.", "success");
+            } catch (err) {
+                console.error('Gagal menyimpan pengaturan:', err);
+                storeConfig = JSON.parse(prevStore);
+                styleConfig = JSON.parse(prevStyle);
+                applyStyleConfigToDOM();
+                updateUIStoreInfo();
+                showToast(errorMessageFrom(err, "Gagal menyimpan pengaturan. Coba lagi."), "error");
+            }
+        }
+
+        function resetStylesToDefault() {
+            customConfirm("Reset semua gaya tampilan ke default toko?", () => {
+                    styleConfig = {
+                    heroBgUrl: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1600&auto=format&fit=crop",
+                    heroBgPos: "center 35%",
+                    heroHeight: "28rem",
+                    heroBlur: "0px",
+                    heroOverlayOpacity: 0.55,
+                    heroTitleSize: "3.5rem",
+                    heroTitleColor: "#FFFFFF",
+                    cardRadius: "16px",
+                    btnRadius: "12px",
+                    theme: "warm"
+                };
+                applyStyleConfigToDOM();
+                populateEditorInputs();
+            }, "Reset Gaya");
+        }
+
+        let editorSnapshot = null;
+
+        function openEditorDrawer(tab = 'gaya') {
+            editorSnapshot = JSON.stringify({ store: storeConfig, style: styleConfig });
+            populateEditorInputs();
+            updateEditorDirty();
+            switchEditorTab(tab);
+            const drawer = document.getElementById('editorDrawer');
+            const backdrop = document.getElementById('editorBackdrop');
+            const panel = document.getElementById('editorPanel');
+
+            drawer.classList.remove('pointer-events-none');
+            drawer.classList.remove('opacity-0');
+            backdrop.classList.remove('opacity-0');
+            panel.classList.remove('translate-x-full');
+        }
+
+        function closeEditorDrawer() {
+            const drawer = document.getElementById('editorDrawer');
+            const backdrop = document.getElementById('editorBackdrop');
+            const panel = document.getElementById('editorPanel');
+
+            panel.classList.add('translate-x-full');
+            backdrop.classList.add('opacity-0');
+            setTimeout(() => {
+                drawer.classList.add('opacity-0');
+                drawer.classList.add('pointer-events-none');
+            }, 300);
+        }
+
+        function switchEditorTab(tab) {
+            ['blocks', 'gaya', 'info'].forEach(t => {
+                document.getElementById(`editorContent-${t}`).classList.add('hidden');
+                const tabBtn = document.getElementById(`editorTab-${t}`);
+                tabBtn.className = "flex-1 py-2 px-2 rounded-t-lg text-white/60 hover:text-white flex items-center justify-center gap-1.5 transition-all";
+            });
+
+            document.getElementById(`editorContent-${tab}`).classList.remove('hidden');
+            const activeBtn = document.getElementById(`editorTab-${tab}`);
+            activeBtn.className = "flex-1 py-2 px-2 rounded-t-lg bg-editor-card text-editor-accent border-t border-x border-white/10 flex items-center justify-center gap-1.5 transition-all";
+        }
+
+        /* Notifikasi singkat pengganti alert() */
+        function showToast(message, type = 'info') {
+            const container = document.getElementById('toastContainer');
+            if (!container) return;
+            const colorClass = type === 'error' ? 'bg-red-600' : type === 'success' ? 'bg-emerald-600' : 'bg-[#2C221E]';
+            const el = document.createElement('div');
+            el.setAttribute('role', 'alert');
+            el.className = `${colorClass} text-white text-xs font-semibold px-4 py-3 rounded-xl shadow-floating transition-all duration-300 opacity-0 -translate-y-2 text-center`;
+            el.textContent = message;
+            container.appendChild(el);
+            requestAnimationFrame(() => el.classList.remove('opacity-0', '-translate-y-2'));
+            setTimeout(() => {
+                el.classList.add('opacity-0', '-translate-y-2');
+                setTimeout(() => el.remove(), 300);
+            }, 2800);
+        }
+
+        /* Format tanggal Indonesia untuk pesan WhatsApp, contoh: 10 November 2026 */
+        function formatTanggalID(isoDate) {
+            if (!isoDate) return '';
+            const [y, m, d] = isoDate.split('-').map(Number);
+            return new Date(y, m - 1, d).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
+        }
+
+        /* Tanggal hari ini dalam zona waktu lokal (bukan UTC) untuk validasi input tanggal */
+        function getTodayLocalDate(offsetDays = 0) {
+            const d = new Date();
+            d.setDate(d.getDate() + offsetDays);
+            const pad = n => String(n).padStart(2, '0');
+            return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+        }
+
+        function formatRp(val) {
+            return 'Rp ' + Number(val).toLocaleString('id-ID');
+        }
+
+        function switchCategoryTab(cat) {
+            document.querySelectorAll('.category-section').forEach(sec => sec.classList.add('hidden'));
+            document.querySelectorAll('.category-pill').forEach(pill => pill.classList.remove('active'));
+
+            const targetSection = document.getElementById(`section-${cat}`);
+            const targetPill = document.getElementById(`pill-${cat}`);
+
+            if (targetSection) targetSection.classList.remove('hidden');
+            if (targetPill) {
+                targetPill.classList.add('active');
+                targetPill.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            }
+
+            const anchor = document.getElementById('catalogAnchor');
+            if (anchor && cat !== 'custom') {
+                anchor.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        function requireAdmin() {
+            if (!isAdminLoggedIn) {
+                showToast("Silakan login admin dengan Google terlebih dahulu.", "error");
+                return false;
+            }
+            return true;
+        }
+
+        function errorMessageFrom(err, fallback) {
+            const code = err && err.code;
+            const map = {
+                'permission-denied': 'Akses ditolak. Pastikan login dengan akun admin toko.',
+                'storage/unauthorized': 'Akses unggah ditolak. Pastikan login dengan akun admin toko.',
+                'unavailable': 'Koneksi ke server terputus. Coba lagi.',
+                'storage/retry-limit-exceeded': 'Unggahan gagal berulang kali. Periksa koneksi.'
+            };
+            if (code && map[code]) return map[code];
+            if (err && typeof err.message === 'string' && err.message.startsWith('Firebase belum')) return err.message;
+            if (err instanceof TypeError && /is not a function/.test(err.message)) return 'Layanan belum siap. Muat ulang halaman lalu coba lagi.';
+            if (err && typeof err.message === 'string' && err.message.startsWith('Foto gagal')) return err.message;
+            return fallback;
+        }
+
+        function dataUrlToBlob(dataUrl) {
+            const [head, b64] = dataUrl.split(',');
+            const mime = (head.match(/:(.*?);/) || [])[1] || 'image/jpeg';
+            const bin = atob(b64);
+            const bytes = new Uint8Array(bin.length);
+            for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+            return new Blob([bytes], { type: mime });
+        }
+
+        /* Escape teks dinamis sebelum disisipkan ke innerHTML */
+        function escapeHtml(str) {
+            return String(str ?? '')
+                .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+        }
+
+        function renderProducts() {
+            ['fresh', 'artificial', 'gift'].forEach(cat => {
+                const container = document.getElementById(`grid-${cat}`);
+                const countBadge = document.getElementById(`${cat}-count`);
+                if (!container) return;
+                if (!productsLoaded) {
+                    container.innerHTML = '<div class="col-span-full text-center py-16 text-ink-muted text-sm">Memuat katalog...</div>';
+                    return;
+                }
+
+                container.innerHTML = '';
+                if (countBadge) countBadge.textContent = productsData[cat].length;
+
+                productsData[cat].forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = "bg-white dynamic-card overflow-hidden shadow-card border border-taupe/15 flex flex-col justify-between product-card hover:-translate-y-1 hover:shadow-floating animate-fade-in relative group";
+                    
+                    const labelMap = { baru: ['Baru', 'bg-emerald-600 text-white'], terbatas: ['Stok Terbatas', 'bg-red-600 text-white'] };
+                    const lbl = labelMap[item.badge];
+                    const badgeHtml = lbl ? `<span class="absolute bottom-2 right-2 chip ${lbl[1]} shadow-sm">${lbl[0]}</span>` : '';
+
+                    const adminActions = isAdminLoggedIn ? `
+                        <div class="absolute top-2 left-2 z-20 flex gap-1.5">
+                            <button onclick="event.stopPropagation(); openEditProductModal('${item.id}', '${cat}')" class="p-2 bg-ink/90 hover:bg-ink text-white rounded-xl shadow-md transition-all hover:scale-110 active:scale-90" title="Edit Produk" aria-label="Edit Produk">
+                                <i data-lucide="edit-3" class="w-4 h-4 text-amber-300"></i>
+                            </button>
+                            <button onclick="event.stopPropagation(); deleteProduct('${item.id}', '${cat}')" class="p-2 bg-red-600/90 hover:bg-red-700 text-white rounded-xl shadow-md transition-all hover:scale-110 active:scale-90" title="Hapus Produk" aria-label="Hapus Produk">
+                                <i data-lucide="trash-2" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    ` : '';
+
+                    card.innerHTML = `
+                        ${adminActions}
+                        <button onclick="event.stopPropagation(); addToCartOnly('${item.id}', '${cat}')" class="absolute top-3 right-3 z-10 w-11 h-11 rounded-full bg-white/90 backdrop-blur-md hover:bg-orange-cta hover:text-white text-ink shadow-md flex items-center justify-center transition-all active:scale-90 border border-white/60" title="Tambah ke Keranjang" aria-label="Tambah ke Keranjang">
+                            <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+                        </button>
+
+                        <div>
+                            <div class="relative w-full h-44 sm:h-56 overflow-hidden skeleton-shimmer">
+                                <img src="${escapeHtml(item.img)}" alt="${escapeHtml(item.name)}" loading="lazy" class="img-fade w-full h-full object-cover transition-[transform,opacity] duration-700 group-hover:scale-105 group-active:scale-100" onload="this.classList.add('is-loaded')" onerror="this.onerror=null;this.src='https://placehold.co/400x400/F4C2C2/362921?text=Austive+Bloom';this.classList.add('is-loaded')">
+                                <div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-md bg-white/80 backdrop-blur-xs text-[10px] font-semibold text-ink-muted">Siap Kirim</div>
+                                ${badgeHtml}
+                            </div>
+                            <div class="p-3.5 sm:p-4">
+                                <h3 class="font-semibold text-xs sm:text-sm text-ink line-clamp-2 min-h-[2.2rem] leading-snug mb-1">${escapeHtml(item.name)}</h3>
+                                <p class="font-serif font-bold text-base sm:text-lg text-taupe-dark">${formatRp(item.price)}</p>
+                            </div>
+                        </div>
+                        <div class="p-3.5 sm:p-4 pt-0">
+                            <button onclick="addToCart('${item.id}', '${cat}')" class="w-full min-h-[44px] py-2.5 dynamic-btn bg-gradient-to-r from-orange-cta to-orange-hover hover:from-orange-hover hover:to-orange-cta font-bold text-xs text-white transition-all flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.96]">
+                                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                                Order
+                            </button>
+                        </div>
+                    `;
+                    container.appendChild(card);
+                });
+                if (productsData[cat].length === 0) {
+                    container.innerHTML = `<div class="col-span-full text-center py-16 text-ink-muted"><i data-lucide="flower-2" class="w-10 h-10 mx-auto text-taupe/40 mb-3"></i><p class="text-sm">Belum ada produk di kategori ini.</p></div>`;
+                }
+            });
+
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+        }
+
+        function addToCartOnly(id, cat) {
+            let product = null;
+            if (cat) product = productsData[cat].find(p => p.id === id);
+            if (!product) {
+                ['fresh', 'artificial', 'gift'].forEach(c => {
+                    if (!product) product = productsData[c].find(p => p.id === id);
+                });
+            }
+            if (!product) return;
+
+            const existing = cart.find(c => c.id === id);
+            if (existing) existing.qty += 1;
+            else cart.push({ ...product, qty: 1 });
+            updateCartUI();
+        }
+
+        function addToCart(id, cat) {
+            addToCartOnly(id, cat);
+            openCart();
+        }
+
+        function updateCartQty(id, delta) {
+            const item = cart.find(c => c.id === id);
+            if (!item) return;
+            item.qty += delta;
+            if (item.qty <= 0) cart = cart.filter(c => c.id !== id);
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            const list = document.getElementById('cartItemsList');
+            const totalEl = document.getElementById('cartTotalPrice');
+            const badge = document.getElementById('cartBadge');
+            const mobileBadge = document.getElementById('mobileCartBadge');
+            const cardBox = document.getElementById('greetingCardBox');
+            const scheduleBox = document.getElementById('deliveryScheduleBox');
+            const recipientBox = document.getElementById('recipientBox');
+
+            const totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
+            const totalPrice = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+
+            if (totalQty > 0) {
+                badge.textContent = totalQty;
+                badge.classList.remove('hidden');
+                mobileBadge.textContent = totalQty;
+                mobileBadge.classList.remove('hidden');
+                cardBox.classList.remove('hidden');
+                scheduleBox.classList.remove('hidden');
+                recipientBox.classList.remove('hidden');
+            } else {
+                badge.classList.add('hidden');
+                mobileBadge.classList.add('hidden');
+                cardBox.classList.add('hidden');
+                scheduleBox.classList.add('hidden');
+                recipientBox.classList.add('hidden');
+            }
+            updateCheckoutSteps();
+
+            list.innerHTML = '';
+            if (cart.length === 0) {
+                list.innerHTML = `
+                    <div class="h-full flex flex-col items-center justify-center py-12 text-center text-ink-muted space-y-2">
+                        <i data-lucide="shopping-bag" class="w-12 h-12 text-taupe/40"></i>
+                        <p class="text-sm">Keranjang belanja Anda masih kosong</p>
+                    </div>
+                `;
+            } else {
+                cart.forEach(item => {
+                    const row = document.createElement('div');
+                    row.className = "bg-white p-3 rounded-xl border border-taupe/15 flex items-center justify-between gap-3 shadow-xs";
+                    row.innerHTML = `
+                        <img src="${escapeHtml(item.img)}" class="w-14 h-14 rounded-lg object-cover bg-blush-light shrink-0">
+                        <div class="flex-grow min-w-0">
+                            <h4 class="text-xs font-semibold text-ink truncate">${escapeHtml(item.name)}</h4>
+                            <p class="text-xs text-taupe-dark font-bold mt-0.5">${formatRp(item.price)}</p>
+                        </div>
+                        <div class="flex items-center border border-taupe/30 rounded-lg overflow-hidden shrink-0">
+                            <button onclick="updateCartQty('${item.id}', -1)" class="px-2 py-1 bg-soft-beige hover:bg-taupe/20 text-xs font-bold">-</button>
+                            <span class="px-2.5 py-1 text-xs font-bold text-ink">${item.qty}</span>
+                            <button onclick="updateCartQty('${item.id}', 1)" class="px-2 py-1 bg-soft-beige hover:bg-taupe/20 text-xs font-bold">+</button>
+                        </div>
+                    `;
+                    list.appendChild(row);
+                });
+            }
+
+            totalEl.textContent = formatRp(totalPrice);
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+        }
+
+        function openCart() {
+            const drawer = document.getElementById('cartDrawer');
+            const backdrop = document.getElementById('cartBackdrop');
+            const panel = document.getElementById('cartPanel');
+
+            drawer.classList.remove('pointer-events-none');
+            drawer.classList.remove('opacity-0');
+            backdrop.classList.remove('opacity-0');
+            panel.classList.remove('translate-x-full');
+        }
+
+        function closeCart() {
+            const drawer = document.getElementById('cartDrawer');
+            const backdrop = document.getElementById('cartBackdrop');
+            const panel = document.getElementById('cartPanel');
+
+            panel.classList.add('translate-x-full');
+            backdrop.classList.add('opacity-0');
+            setTimeout(() => {
+                drawer.classList.add('opacity-0');
+                drawer.classList.add('pointer-events-none');
+            }, 300);
+        }
+
+        /* ===== Validasi inline ===== */
+        const WA_REGEX = /^[0-9+\s-]{8,20}$/;
+        const FIELD_RULES = {
+            recvName: {
+                value: v => v.trim(),
+                check: v => !v ? 'Nama penerima wajib diisi.' : v.length < 2 ? 'Nama minimal 2 karakter.' : ''
+            },
+            recvWA: {
+                value: v => v.trim(),
+                check: v => !v ? 'Nomor WhatsApp wajib diisi.' : !WA_REGEX.test(v) ? 'Gunakan 8–20 angka, +, spasi, atau strip.' : ''
+            },
+            recvAddress: {
+                value: v => v.trim(),
+                check: v => !v ? 'Alamat lengkap wajib diisi.' : v.length < 10 ? 'Alamat minimal 10 karakter.' : ''
+            },
+            custName: {
+                value: v => v.trim(),
+                check: v => !v ? 'Nama pemesan wajib diisi.' : v.length < 2 ? 'Nama minimal 2 karakter.' : ''
+            },
+            custWA: {
+                value: v => v.trim(),
+                check: v => !v ? 'Nomor WhatsApp wajib diisi.' : !WA_REGEX.test(v) ? 'Gunakan 8–20 angka, +, spasi, atau strip.' : ''
+            },
+            custDate: {
+                value: v => v,
+                check: v => !v ? 'Pilih tanggal dibutuhkan.' : v < getTodayLocalDate(0) ? 'Tanggal tidak boleh sebelum hari ini.' : ''
+            },
+            deliveryDate: {
+                value: v => v,
+                check: v => (v && v < getTodayLocalDate(0)) ? 'Tanggal kirim tidak boleh sebelum hari ini.' : ''
+            }
+        };
+
+        function setFieldError(target, msg) {
+            const el = typeof target === 'string' ? document.getElementById(target) : target;
+            if (!el) return;
+            if (!el.id) el.id = 'grp-' + Math.random().toString(36).slice(2, 8);
+            const errId = el.id + '-err';
+            let err = document.getElementById(errId);
+            if (!msg) {
+                if (err) err.remove();
+                el.removeAttribute('aria-invalid');
+                el.classList.remove('border-red-500');
+                return;
+            }
+            if (!err) {
+                err = document.createElement('p');
+                err.id = errId;
+                err.className = 'text-[11px] text-red-600 font-medium mt-1';
+                err.setAttribute('role', 'alert');
+                el.insertAdjacentElement('afterend', err);
+            }
+            err.textContent = msg;
+            el.setAttribute('aria-invalid', 'true');
+            el.classList.add('border-red-500');
+        }
+
+        function validateFieldById(id) {
+            const el = document.getElementById(id);
+            const rule = FIELD_RULES[id];
+            if (!el || !rule) return true;
+            const msg = rule.check(rule.value(el.value));
+            setFieldError(el, msg);
+            return !msg;
+        }
+
+        function payGroupOf(name) {
+            const first = document.querySelector(`input[name="${name}"]`);
+            return first ? first.closest('[role="radiogroup"]') : null;
+        }
+
+        function validateRecipientFields() {
+            return ['recvName', 'recvWA', 'recvAddress'].map(validateFieldById).every(Boolean);
+        }
+
+        function initFieldValidation() {
+            ['custName', 'custWA', 'custDate'].forEach(id => {
+                const el = document.getElementById(id);
+                if (!el) return;
+                el.addEventListener('blur', () => validateFieldById(id));
+                el.addEventListener('input', () => {
+                    if (el.getAttribute('aria-invalid') === 'true') validateFieldById(id);
+                });
+            });
+        }
+
+        /* Indikator langkah checkout: Keranjang -> Data -> Pembayaran */
+        function updateCheckoutSteps() {
+            const el = document.getElementById('checkoutSteps');
+            if (!el) return;
+            const hasCart = cart.length > 0;
+            const dataOk = hasCart && ['recvName', 'recvWA', 'recvAddress'].every(id => {
+                const r = FIELD_RULES[id];
+                return !r.check(r.value(document.getElementById(id).value));
+            });
+            const payOk = !!document.querySelector('input[name="cartPay"]:checked');
+            const done = [hasCart, dataOk, payOk];
+            const current = done.indexOf(false) === -1 ? 3 : done.indexOf(false) + 1;
+
+            el.querySelectorAll('li[data-step]').forEach(li => {
+                const n = Number(li.dataset.step);
+                const dot = li.querySelector('.step-num');
+                if (done[n - 1]) {
+                    dot.className = 'step-num w-5 h-5 rounded-full flex items-center justify-center bg-emerald-600 text-white text-[10px]';
+                    dot.textContent = '✓';
+                    li.className = 'flex items-center gap-1.5 whitespace-nowrap text-emerald-700';
+                } else if (n === current) {
+                    dot.className = 'step-num w-5 h-5 rounded-full flex items-center justify-center bg-ink text-white text-[10px]';
+                    dot.textContent = String(n);
+                    li.className = 'flex items-center gap-1.5 whitespace-nowrap text-ink';
+                } else {
+                    dot.className = 'step-num w-5 h-5 rounded-full flex items-center justify-center bg-taupe/20 text-ink-muted text-[10px]';
+                    dot.textContent = String(n);
+                    li.className = 'flex items-center gap-1.5 whitespace-nowrap text-ink-muted';
+                }
+            });
+        }
+
+        /* ===== Penyimpanan pesanan (data dari Firestore, lihat modul Firebase) ===== */
+        const ORDER_STATUSES = ['BARU', 'DIHUBUNGI', 'DIBAYAR', 'SELESAI', 'DIBATALKAN'];
+        let ordersData = [];
+        let checkoutBusy = false;
+
+        function generateOrderId() {
+            const d = new Date();
+            const pad = n => String(n).padStart(2, '0');
+            const rnd = Math.random().toString(36).slice(2, 6).toUpperCase();
+            return `AB${String(d.getFullYear()).slice(2)}${pad(d.getMonth() + 1)}${pad(d.getDate())}-${rnd}`;
+        }
+
+        async function saveOrder(order) {
+            await window.fbCreateOrder(order);
+        }
+
+        function buildWaUrl(msg) {
+            return `https://wa.me/${storeConfig.phone}?text=${encodeURIComponent(msg)}`;
+        }
+
+        /* Buka tab WA dulu (sinkron, agar tidak diblokir popup), lalu isi URL setelah pesanan tersimpan */
+        async function openWaAfter(saveFn, buildMsgFn) {
+            const waWin = window.open('', '_blank');
+            try {
+                const order = await saveFn();
+                const url = buildWaUrl(buildMsgFn(order));
+                if (waWin) waWin.location.href = url;
+                else window.open(url, '_blank');
+                return order;
+            } catch (err) {
+                if (waWin) waWin.close();
+                throw err;
+            }
+        }
+
+        async function checkoutCartWA() {
+            if (checkoutBusy) return;
+            if (cart.length === 0) {
+                showToast("Keranjang Anda masih kosong.", "error");
+                return;
+            }
+
+            let ok = validateRecipientFields();
+            ['deliveryDate'].forEach(id => { if (!validateFieldById(id)) ok = false; });
+
+            const delPay = document.querySelector('input[name="cartPay"]:checked')?.value || '';
+            if (!delPay) {
+                setFieldError(payGroupOf('cartPay'), 'Pilih metode pembayaran.');
+                ok = false;
+            } else {
+                setFieldError(payGroupOf('cartPay'), '');
+            }
+
+            if (!ok) {
+                showToast("Lengkapi data yang ditandai merah.", "error");
+                const firstBad = document.querySelector('#recipientBox [aria-invalid="true"]') || document.querySelector('#deliveryScheduleBox [aria-invalid="true"]');
+                if (firstBad) firstBad.focus();
+                updateCheckoutSteps();
+                return;
+            }
+
+            const recipient = {
+                name: document.getElementById('recvName').value.trim(),
+                wa: document.getElementById('recvWA').value.trim(),
+                address: document.getElementById('recvAddress').value.trim()
+            };
+            const delDate = document.getElementById('deliveryDate').value;
+            const delSlot = document.getElementById('deliverySlot').value;
+            const cardTo = document.getElementById('cardTo').value.trim();
+            const cardFrom = document.getElementById('cardFrom').value.trim();
+            const cardMsg = document.getElementById('cardMsg').value.trim();
+
+            const items = cart.map(i => ({ name: i.name, qty: i.qty, price: i.price }));
+            const total = items.reduce((sum, i) => sum + i.price * i.qty, 0);
+
+            checkoutBusy = true;
+            try {
+                await openWaAfter(
+                    async () => {
+                        const order = {
+                            id: generateOrderId(),
+                            createdAt: new Date().toISOString(),
+                            status: 'BARU',
+                            type: 'cart',
+                            customer: recipient,
+                            items,
+                            total,
+                            delivery: { date: delDate, slot: delSlot, pay: delPay },
+                            card: { to: cardTo, from: cardFrom, msg: cardMsg },
+                            notes: ''
+                        };
+                        await saveOrder(order);
+                        return order;
+                    },
+                    order => {
+                        let msg = `*PESANAN BARU #${order.id}*\n`;
+                        msg += `*${storeConfig.name.toUpperCase()}*\n`;
+                        msg += "-------------------------------------------\n";
+                        let grandTotal = 0;
+                        items.forEach((item, idx) => {
+                            const sub = item.price * item.qty;
+                            grandTotal += sub;
+                            msg += `${idx + 1}. *${item.name}* (x${item.qty}) = ${formatRp(sub)}\n`;
+                        });
+                        msg += `\n💰 *Total Pembelian: ${formatRp(grandTotal)}*\n`;
+                        msg += "-------------------------------------------\n";
+                        msg += `👤 *Penerima:* ${recipient.name}\n`;
+                        msg += `📱 *No WhatsApp:* ${recipient.wa}\n`;
+                        msg += `📍 *Alamat:* ${recipient.address}\n`;
+                        if (delDate) {
+                            msg += `📅 *Tanggal Kirim:* ${formatTanggalID(delDate)}\n`;
+                            msg += `⏰ *Slot Waktu:* ${delSlot}\n`;
+                        }
+                        msg += `💳 *Metode Pembayaran:* ${delPay}\n`;
+                        if (cardTo || cardFrom || cardMsg) {
+                            msg += `\n💌 *KARTU UCAPAN:*\n`;
+                            if (cardTo) msg += `• To: ${cardTo}\n`;
+                            if (cardFrom) msg += `• From: ${cardFrom}\n`;
+                            if (cardMsg) msg += `• Pesan: "${cardMsg}"\n`;
+                        }
+                        msg += "-------------------------------------------\n";
+                        msg += "Mohon konfirmasi ketersediaan dan instruksi pembayaran ya kak!";
+                        return msg;
+                    }
+                );
+                showToast("Pesanan tersimpan. Lanjutkan di WhatsApp.", "success");
+            } catch (err) {
+                console.error('Gagal menyimpan pesanan:', err);
+                showToast(errorMessageFrom(err, "Pesanan gagal disimpan. Silakan coba lagi."), "error");
+            } finally {
+                checkoutBusy = false;
+            }
+        }
+
+        async function submitCustomOrder(e) {
+            e.preventDefault();
+            if (checkoutBusy) return;
+
+            let ok = ['custName', 'custWA', 'custDate'].map(validateFieldById).every(Boolean);
+
+            const pay = document.querySelector('input[name="custPay"]:checked')?.value || '';
+            if (!pay) {
+                setFieldError(payGroupOf('custPay'), 'Pilih metode pembayaran.');
+                ok = false;
+            } else {
+                setFieldError(payGroupOf('custPay'), '');
+            }
+
+            if (!ok) {
+                showToast("Lengkapi data yang ditandai merah.", "error");
+                const firstBad = document.querySelector('#customOrderForm [aria-invalid="true"]');
+                if (firstBad) firstBad.focus();
+                return;
+            }
+
+            const name = document.getElementById('custName').value.trim();
+            const wa = document.getElementById('custWA').value.trim();
+            const type = document.getElementById('custType').value;
+            const color = document.getElementById('custColor').value.trim();
+            const budget = document.getElementById('custBudget').value;
+            const size = document.querySelector('input[name="custSize"]:checked')?.value || 'Sedang';
+            const eventType = document.getElementById('custEvent').value;
+            const date = document.getElementById('custDate').value;
+            const notes = document.getElementById('custNotes').value.trim();
+            const budgetNum = parseInt(budget, 10);
+            const budgetText = Number.isFinite(budgetNum) && budgetNum > 0 ? formatRp(budgetNum) : 'Belum ditentukan';
+
+            checkoutBusy = true;
+            try {
+                await openWaAfter(
+                    async () => {
+                        const order = {
+                            id: generateOrderId(),
+                            createdAt: new Date().toISOString(),
+                            status: 'BARU',
+                            type: 'custom',
+                            customer: { name, wa, address: '' },
+                            items: [{ name: `Buket custom (${type})`, qty: 1, price: 0 }],
+                            total: 0,
+                            budget: budgetText,
+                            delivery: { date, slot: '', pay },
+                            custom: { type, color, size, event: eventType },
+                            card: { to: '', from: '', msg: '' },
+                            notes
+                        };
+                        await saveOrder(order);
+                        return order;
+                    },
+                    order => {
+                        let msg = `*PESANAN BUKET CUSTOM #${order.id}*\n`;
+                        msg += `*${storeConfig.name.toUpperCase()}*\n`;
+                        msg += `-------------------------------------------\n`;
+                        msg += `👤 *Nama Pemesan:* ${name}\n`;
+                        msg += `📱 *No WhatsApp:* ${wa}\n`;
+                        msg += `🌸 *Jenis Bunga:* ${type}\n`;
+                        msg += `🎨 *Warna Dominan:* ${color || '-'}\n`;
+                        msg += `💰 *Estimasi Budget:* ${budgetText}\n`;
+                        msg += `📏 *Ukuran Buket:* ${size}\n`;
+                        msg += `🎉 *Acara/Momen:* ${eventType}\n`;
+                        msg += `📅 *Tanggal Dibutuhkan:* ${formatTanggalID(date)}\n`;
+                        msg += `💳 *Metode Pembayaran:* ${pay}\n`;
+                        if (notes) msg += `📝 *Catatan/Referensi:* ${notes}\n`;
+                        msg += `-------------------------------------------\n`;
+                        msg += `Mohon bantu buatkan rekomendasi desainnya ya kak!`;
+                        return msg;
+                    }
+                );
+                showToast("Permintaan custom tersimpan. Lanjutkan di WhatsApp.", "success");
+            } catch (err) {
+                console.error('Gagal menyimpan pesanan custom:', err);
+                showToast(errorMessageFrom(err, "Pesanan gagal disimpan. Coba lagi."), "error");
+            } finally {
+                checkoutBusy = false;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', initFieldValidation);
+
+        function checkAdminSession() {
+            const topBar = document.getElementById('adminTopBar');
+            topBar.classList.toggle('hidden', !isAdminLoggedIn);
+            if (!isAdminLoggedIn) closeAdminMenu();
+            renderProducts();
+        }
+
+        function openAdminLoginModal() {
+            document.getElementById('adminLoginModal').classList.remove('hidden');
+        }
+
+        function closeAdminLoginModal() {
+            document.getElementById('adminLoginModal').classList.add('hidden');
+            document.getElementById('adminLoginError').classList.add('hidden');
+        }
+
+        function handleAdminLogin(e) {
+            if (e) e.preventDefault();
+            signInAdminGoogle();
+        }
+
+        function signInAdminGoogle() {
+            closeAdminLoginModal();
+            window.fbSignIn();
+        }
+
+        async function adminLogout() {
+            try {
+                await window.fbSignOut();
+                showToast("Anda sudah keluar dari mode admin.", "success");
+            } catch (err) {
+                console.error(err);
+                showToast("Gagal keluar. Coba lagi.", "error");
+            }
+        }
+
+        /* Menu Admin dropdown */
+        function toggleAdminMenu(ev) {
+            if (ev) ev.stopPropagation();
+            const menu = document.getElementById('adminMenu');
+            const btn = document.getElementById('adminMenuBtn');
+            const willOpen = menu.classList.contains('hidden');
+            menu.classList.toggle('hidden', !willOpen);
+            btn.setAttribute('aria-expanded', String(willOpen));
+            if (willOpen) refreshAdminMenuBadge();
+        }
+
+        function closeAdminMenu() {
+            const menu = document.getElementById('adminMenu');
+            const btn = document.getElementById('adminMenuBtn');
+            if (menu) menu.classList.add('hidden');
+            if (btn) btn.setAttribute('aria-expanded', 'false');
+        }
+
+        function adminMenuAction(action) {
+            closeAdminMenu();
+            if (action === 'add') openAddProductModal();
+            else if (action === 'orders') openOrdersDashboard();
+            else if (action === 'builder') openEditorDrawer('gaya');
+            else if (action === 'logout') adminLogout();
+        }
+
+        document.addEventListener('click', e => {
+            if (!e.target.closest('#adminMenuWrap')) closeAdminMenu();
+        });
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') closeAdminMenu();
+        });
+
+        /* Unggah Foto Produk & Preview */
+        /* Kompres gambar di browser: maks lebar 1200 px, JPEG kualitas 0.7 */
+        function compressImageFile(file, maxWidth = 1200, quality = 0.7) {
+            return new Promise((resolve, reject) => {
+                if (!file.type.startsWith('image/')) {
+                    return reject(new Error('File bukan gambar.'));
+                }
+                const reader = new FileReader();
+                reader.onerror = () => reject(new Error('Gagal membaca file.'));
+                reader.onload = e => {
+                    const img = new Image();
+                    img.onerror = () => reject(new Error('Format gambar tidak didukung.'));
+                    img.onload = () => {
+                        const scale = Math.min(1, maxWidth / img.width);
+                        const canvas = document.createElement('canvas');
+                        canvas.width = Math.round(img.width * scale);
+                        canvas.height = Math.round(img.height * scale);
+                        const ctx = canvas.getContext('2d');
+                        ctx.fillStyle = '#FFFFFF';
+                        ctx.fillRect(0, 0, canvas.width, canvas.height);
+                        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                        resolve(canvas.toDataURL('image/jpeg', quality));
+                    };
+                    img.src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            });
+        }
+
+        /* ===== Galeri produk: maks 8 foto, cover = foto pertama ===== */
+        const GALLERY_MAX = 8;
+        let galleryDraft = [];
+        let isSavingProduct = false;
+
+        function newUid() {
+            return 'g' + Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+        }
+
+        function showGalleryError(msg) {
+            const el = document.getElementById('galleryError');
+            el.textContent = msg;
+            el.classList.remove('hidden');
+        }
+
+        function clearGalleryError() {
+            const el = document.getElementById('galleryError');
+            el.textContent = '';
+            el.classList.add('hidden');
+        }
+
+        function renderGallery() {
+            const grid = document.getElementById('galleryGrid');
+            if (!grid) return;
+            document.getElementById('galleryCount').textContent = `${galleryDraft.length}/${GALLERY_MAX}`;
+            document.getElementById('galleryEmpty').classList.toggle('hidden', galleryDraft.length > 0);
+
+            grid.innerHTML = galleryDraft.map((it, i) => {
+                const isCover = i === 0;
+                const last = galleryDraft.length - 1;
+                let overlay = '';
+                if (it.status === 'queued') {
+                    overlay = '<div class="absolute inset-0 bg-ink/40 flex items-center justify-center text-white text-[10px] font-semibold">Antre</div>';
+                } else if (it.status === 'processing') {
+                    overlay = '<div class="absolute inset-0 bg-ink/60 flex flex-col items-center justify-center gap-1 text-white text-[10px] font-semibold"><span class="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin"></span>Memproses</div>';
+                } else if (it.status === 'uploading') {
+                    overlay = `<div class="absolute inset-0 bg-ink/60 flex flex-col items-center justify-center gap-1 text-white text-[10px] font-semibold"><span>Unggah ${it.pct || 0}%</span><span class="block w-3/4 h-1 rounded bg-white/30 overflow-hidden"><span class="block h-full bg-orange-cta" style="width:${it.pct || 0}%"></span></span></div>`;
+                } else if (it.status === 'error') {
+                    overlay = `<div class="absolute inset-0 bg-red-700/85 flex items-center justify-center text-white text-[10px] font-semibold px-1 text-center">${escapeHtml(it.error || 'Gagal')}</div>`;
+                }
+                const img = it.status === 'error' || !it.src ? '' : `<img src="${escapeHtml(it.src)}" alt="Foto ${i + 1}" class="w-full h-full object-cover">`;
+                const coverBtn = isCover ? '' : `<button type="button" onclick="gallerySetCover(${i})" aria-label="Jadikan cover" title="Jadikan cover" class="w-9 h-9 rounded-lg bg-white/95 text-amber-600 flex items-center justify-center hover:bg-white"><i data-lucide="star" class="w-3.5 h-3.5"></i></button>`;
+                return `
+                    <div class="relative rounded-xl overflow-hidden bg-soft-beige aspect-square border ${isCover ? 'border-orange-cta ring-2 ring-orange-cta/40' : 'border-taupe/25'}">
+                        ${img}${overlay}
+                        ${isCover ? '<span class="absolute top-1 left-1 chip bg-ink text-white">Cover</span>' : ''}
+                        <div class="absolute bottom-1 inset-x-1 flex items-center justify-between gap-1">
+                            <div class="flex gap-1">
+                                <button type="button" onclick="galleryMove(${i}, -1)" ${i === 0 ? 'disabled' : ''} aria-label="Geser ke kiri" class="w-9 h-9 rounded-lg bg-white/95 text-ink flex items-center justify-center disabled:opacity-40 hover:bg-white"><i data-lucide="chevron-left" class="w-3.5 h-3.5"></i></button>
+                                <button type="button" onclick="galleryMove(${i}, 1)" ${i === last ? 'disabled' : ''} aria-label="Geser ke kanan" class="w-9 h-9 rounded-lg bg-white/95 text-ink flex items-center justify-center disabled:opacity-40 hover:bg-white"><i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></button>
+                            </div>
+                            <div class="flex gap-1">
+                                ${coverBtn}
+                                <button type="button" onclick="galleryRemove(${i})" aria-label="Hapus foto" class="w-9 h-9 rounded-lg bg-red-600 text-white flex items-center justify-center hover:bg-red-700"><i data-lucide="trash-2" class="w-3.5 h-3.5"></i></button>
+                            </div>
+                        </div>
+                    </div>`;
+            }).join('');
+
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+        }
+
+        async function handleGalleryFiles(event) {
+            const input = event.target;
+            const files = Array.from(input.files || []);
+            input.value = '';
+            if (!files.length) return;
+
+            const slots = GALLERY_MAX - galleryDraft.length;
+            if (slots <= 0) {
+                showGalleryError(`Galeri sudah penuh (maks ${GALLERY_MAX} foto).`);
+                return;
+            }
+            if (files.length > slots) {
+                showGalleryError(`Hanya ${slots} foto yang bisa ditambahkan (maks ${GALLERY_MAX}).`);
+            } else {
+                clearGalleryError();
+            }
+
+            const batch = files.slice(0, slots).map(f => ({ uid: newUid(), src: '', status: 'queued', error: '', file: f }));
+            galleryDraft.push(...batch);
+            renderGallery();
+
+            for (const item of batch) {
+                item.status = 'processing';
+                renderGallery();
+                try {
+                    item.src = await compressImageFile(item.file);
+                    item.status = 'ready';
+                } catch (err) {
+                    console.error(err);
+                    item.status = 'error';
+                    item.error = err.message || 'Gagal diproses';
+                }
+                delete item.file;
+                renderGallery();
+            }
+
+            const failed = batch.filter(b => b.status === 'error').length;
+            if (failed) showToast(`${failed} foto gagal diproses. Hapus lalu coba lagi.`, 'error');
+            else showToast(`${batch.length} foto siap.`, 'success');
+        }
+
+        function addGalleryUrl() {
+            const input = document.getElementById('galleryUrlInput');
+            const url = input.value.trim();
+            if (!url) {
+                showGalleryError('Masukkan URL foto terlebih dahulu.');
+                return;
+            }
+            if (!/^https?:\/\//i.test(url)) {
+                showGalleryError('URL foto harus diawali https:// atau http://');
+                return;
+            }
+            if (galleryDraft.length >= GALLERY_MAX) {
+                showGalleryError(`Galeri sudah penuh (maks ${GALLERY_MAX} foto).`);
+                return;
+            }
+            if (galleryDraft.some(g => g.src === url)) {
+                showGalleryError('Foto dengan URL ini sudah ada di galeri.');
+                return;
+            }
+            galleryDraft.push({ uid: newUid(), src: url, status: 'ready', error: '' });
+            input.value = '';
+            clearGalleryError();
+            renderGallery();
+        }
+
+        function galleryMove(index, dir) {
+            const target = index + dir;
+            if (target < 0 || target >= galleryDraft.length) return;
+            [galleryDraft[index], galleryDraft[target]] = [galleryDraft[target], galleryDraft[index]];
+            renderGallery();
+        }
+
+        function gallerySetCover(index) {
+            if (index <= 0 || index >= galleryDraft.length) return;
+            const [item] = galleryDraft.splice(index, 1);
+            galleryDraft.unshift(item);
+            renderGallery();
+            showToast('Cover foto diperbarui.', 'success');
+        }
+
+        function galleryRemove(index) {
+            galleryDraft.splice(index, 1);
+            clearGalleryError();
+            renderGallery();
+        }
+
+        /* ===== Modal form produk ===== */
+        function openAddProductModal() {
+            document.getElementById('productFormTitle').textContent = "Tambah Produk Baru";
+            document.getElementById('editProdId').value = "";
+            document.getElementById('prodName').value = "";
+            document.getElementById('prodPrice').value = "";
+            document.getElementById('prodCat').value = "fresh";
+            document.getElementById('prodBadge').value = "";
+            document.getElementById('galleryUrlInput').value = "";
+            document.getElementById('prodImgFile').value = "";
+            galleryDraft = [];
+            clearGalleryError();
+            renderGallery();
+            document.getElementById('productFormModal').classList.remove('hidden');
+        }
+
+        function openEditProductModal(id, cat) {
+            let item = null;
+            let foundCategory = cat;
+
+            if (cat && productsData[cat]) item = productsData[cat].find(p => p.id === id);
+
+            if (!item) {
+                ['fresh', 'artificial', 'gift'].forEach(c => {
+                    if (!item) {
+                        const found = productsData[c].find(p => p.id === id);
+                        if (found) {
+                            item = found;
+                            foundCategory = c;
+                        }
+                    }
+                });
+            }
+
+            if (!item) return;
+
+            document.getElementById('productFormTitle').textContent = "Edit Produk";
+            document.getElementById('editProdId').value = id;
+            document.getElementById('prodName').value = item.name;
+            document.getElementById('prodPrice').value = item.price;
+            document.getElementById('prodCat').value = foundCategory;
+            document.getElementById('prodBadge').value = item.badge || "";
+            document.getElementById('galleryUrlInput').value = "";
+            document.getElementById('prodImgFile').value = "";
+
+            const sources = (item.images && item.images.length ? item.images : [item.img]).filter(Boolean).slice(0, GALLERY_MAX);
+            galleryDraft = sources.map(src => ({ uid: newUid(), src, status: 'ready', error: '' }));
+            clearGalleryError();
+            renderGallery();
+
+            document.getElementById('productFormModal').classList.remove('hidden');
+        }
+
+        function closeProductFormModal() {
+            document.getElementById('productFormModal').classList.add('hidden');
+        }
+
+        async function saveProduct(e) {
+            e.preventDefault();
+            if (isSavingProduct) return;
+            if (!requireAdmin()) return;
+
+            const editId = document.getElementById('editProdId').value;
+            const name = document.getElementById('prodName').value.trim();
+            const priceRaw = document.getElementById('prodPrice').value;
+            const price = Math.round(Number(priceRaw));
+            const cat = document.getElementById('prodCat').value;
+            const badge = document.getElementById('prodBadge').value;
+
+            if (!name) {
+                showToast("Nama produk wajib diisi.", "error");
+                return;
+            }
+            if (priceRaw === '' || !Number.isFinite(price) || price < 0) {
+                showToast("Harga harus berupa angka yang valid.", "error");
+                return;
+            }
+            if (!productsData[cat]) {
+                showToast("Kategori produk tidak valid.", "error");
+                return;
+            }
+            if (galleryDraft.some(g => g.status === 'queued' || g.status === 'processing')) {
+                showToast("Tunggu sampai semua foto selesai diproses.", "error");
+                return;
+            }
+            if (!galleryDraft.some(g => g.status === 'ready')) {
+                showGalleryError("Tambahkan minimal satu foto produk.");
+                showToast("Silakan unggah foto atau masukkan URL foto produk.", "error");
+                return;
+            }
+
+            const id = editId || ('prod_' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6));
+            const submitBtn = e.target.querySelector('button[type="submit"]');
+            isSavingProduct = true;
+            if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Menyimpan...'; }
+
+            try {
+                // Unggah foto yang masih berupa data lokal ke Firebase Storage, satu per satu
+                for (const item of galleryDraft) {
+                    if (item.status === 'ready' && item.src.startsWith('data:')) {
+                        item.status = 'uploading';
+                        item.pct = 0;
+                        renderGallery();
+                        try {
+                            item.src = await window.fbUploadImage(
+                                dataUrlToBlob(item.src),
+                                `products/${id}/${item.uid}.jpg`,
+                                pct => { item.pct = pct; renderGallery(); }
+                            );
+                            item.status = 'ready';
+                        } catch (err) {
+                            item.status = 'error';
+                            item.error = 'Gagal unggah';
+                            renderGallery();
+                            throw new Error(errorMessageFrom(err, 'Foto gagal diunggah. Coba lagi.'));
+                        }
+                        renderGallery();
+                    }
+                }
+
+                const images = galleryDraft.filter(g => g.status === 'ready').map(g => g.src);
+                const product = { id, cat, name, price, img: images[0], images, badge, updatedAt: Date.now() };
+                await window.fbSaveProduct(product);
+
+                closeProductFormModal();
+                showToast("Produk berhasil disimpan dan tampil di semua perangkat.", "success");
+            } catch (err) {
+                console.error('Gagal menyimpan produk:', err);
+                showToast(errorMessageFrom(err, 'Gagal menyimpan produk. Coba lagi.'), "error");
+            } finally {
+                isSavingProduct = false;
+                if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'Simpan Produk'; }
+            }
+        }
+
+        function deleteProduct(id, cat) {
+            if (!requireAdmin()) return;
+            customConfirm("Apakah Anda yakin ingin menghapus produk ini?", async () => {
+                try {
+                    await window.fbDeleteProduct(id);
+                    showToast("Produk dihapus.", "success");
+                } catch (err) {
+                    console.error(err);
+                    showToast(errorMessageFrom(err, "Gagal menghapus produk."), "error");
+                }
+            }, "Hapus Produk");
+        }
+
+        /* Dialog konfirmasi in-page pengganti confirm() */
+        function customConfirm(text, onOk, title = "Konfirmasi") {
+            const modal = document.getElementById('confirmModal');
+            const okBtn = document.getElementById('confirmOkBtn');
+            const cancelBtn = document.getElementById('confirmCancelBtn');
+            document.getElementById('confirmTitle').textContent = title;
+            document.getElementById('confirmText').textContent = text;
+
+            const close = () => modal.classList.add('hidden');
+            okBtn.onclick = () => { close(); if (typeof onOk === 'function') onOk(); };
+            cancelBtn.onclick = close;
+            modal.onclick = (ev) => { if (ev.target === modal) close(); };
+            modal.classList.remove('hidden');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            applyStyleConfigToDOM();
+            if (styleConfig.theme) applyThemePreset(styleConfig.theme);
+            updateUIStoreInfo();
+            checkAdminSession();
+            updateCartUI();
+
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            const tglStr = getTodayLocalDate(1);
+            
+            const custDateInput = document.getElementById('custDate');
+            const delDateInput = document.getElementById('deliveryDate');
+            const minDate = getTodayLocalDate(0);
+            if (custDateInput) { custDateInput.value = tglStr; custDateInput.min = minDate; }
+            if (delDateInput) { delDateInput.value = tglStr; delDateInput.min = minDate; }
+        });
+
+        /* ===== Dashboard Daftar Pesanan ===== */
+        let ordersFilter = 'SEMUA';
+
+        const STATUS_STYLE = {
+            BARU: 'bg-amber-100 text-amber-800 border-amber-300',
+            DIHUBUNGI: 'bg-blue-100 text-blue-800 border-blue-300',
+            DIBAYAR: 'bg-emerald-100 text-emerald-800 border-emerald-300',
+            SELESAI: 'bg-zinc-200 text-zinc-800 border-zinc-400',
+            DIBATALKAN: 'bg-red-100 text-red-800 border-red-300'
+        };
+
+        function normalizeWaNumber(raw) {
+            let digits = String(raw || '').replace(/\D/g, '');
+            if (digits.startsWith('0')) digits = '62' + digits.slice(1);
+            return digits;
+        }
+
+        function orderSummary(o) {
+            if (o.type === 'custom') {
+                const c = o.custom || {};
+                return `Buket custom · ${c.type || '-'} · ${c.event || '-'}`;
+            }
+            const count = (o.items || []).reduce((n, i) => n + (i.qty || 0), 0);
+            const first = (o.items && o.items[0]) ? o.items[0].name : '-';
+            return `${escapeHtml(first)}${o.items && o.items.length > 1 ? ` + ${o.items.length - 1} item lain` : ''} · ${count} pcs`;
+        }
+
+        function orderMoneyText(o) {
+            if (o.type === 'custom') return escapeHtml(o.budget || 'Belum ditentukan');
+            return formatRp(o.total || 0);
+        }
+
+        function orderTimeText(iso) {
+            const d = new Date(iso);
+            if (isNaN(d)) return '-';
+            return d.toLocaleString('id-ID', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+        }
+
+        function statusSelectHtml(o) {
+            const opts = ORDER_STATUSES.map(st => `<option value="${st}" ${st === o.status ? 'selected' : ''}>${st}</option>`).join('');
+            return `<label class="sr-only" for="st-${escapeHtml(o.id)}">Ubah status</label>
+                <select id="st-${escapeHtml(o.id)}" onchange="changeOrderStatus('${escapeHtml(o.id)}', this.value)" class="px-2.5 py-1.5 rounded-lg border border-taupe/30 bg-white text-[11px] font-semibold text-ink min-h-[36px]">${opts}</select>`;
+        }
+
+        function contactButtonHtml(o) {
+            return `<button type="button" onclick="contactCustomer('${escapeHtml(o.id)}')" class="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-[11px] min-h-[40px] transition-colors">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Hubungi Customer
+            </button>`;
+        }
+
+        function orderCardHtml(o) {
+            const statusCls = STATUS_STYLE[o.status] || STATUS_STYLE.BARU;
+            return `<article class="bg-white rounded-2xl border border-taupe/15 shadow-xs p-4 space-y-3">
+                <div class="flex items-start justify-between gap-2">
+                    <div class="min-w-0">
+                        <p class="text-[11px] font-mono font-bold text-ink">#${escapeHtml(o.id)}</p>
+                        <p class="text-[10px] text-ink-muted">${orderTimeText(o.createdAt)}</p>
+                    </div>
+                    <span class="chip border ${statusCls}">${o.status}</span>
+                </div>
+                <div>
+                    <p class="text-sm font-semibold text-ink">${escapeHtml(o.customer?.name || '-')}</p>
+                    <p class="text-xs text-ink-muted">${escapeHtml(o.customer?.wa || '-')}</p>
+                </div>
+                <p class="text-xs text-ink-muted">${orderSummary(o)}</p>
+                <div class="flex items-center justify-between gap-2">
+                    <span class="font-serif font-bold text-base text-taupe-dark">${orderMoneyText(o)}</span>
+                    ${statusSelectHtml(o)}
+                </div>
+                <div>${contactButtonHtml(o)}</div>
+            </article>`;
+        }
+
+        function orderRowHtml(o) {
+            const statusCls = STATUS_STYLE[o.status] || STATUS_STYLE.BARU;
+            return `<tr class="align-top hover:bg-soft-beige/30">
+                <td class="px-3 py-3"><p class="font-mono font-bold text-ink">#${escapeHtml(o.id)}</p><p class="text-[10px] text-ink-muted">${orderTimeText(o.createdAt)}</p></td>
+                <td class="px-3 py-3"><p class="font-semibold text-ink">${escapeHtml(o.customer?.name || '-')}</p><p class="text-ink-muted">${escapeHtml(o.customer?.wa || '-')}</p></td>
+                <td class="px-3 py-3 text-ink-muted">${orderSummary(o)}</td>
+                <td class="px-3 py-3 font-semibold text-taupe-dark whitespace-nowrap">${orderMoneyText(o)}</td>
+                <td class="px-3 py-3"><span class="chip border ${statusCls} mb-1.5">${o.status}</span><br>${statusSelectHtml(o)}</td>
+                <td class="px-3 py-3 text-right">${contactButtonHtml(o)}</td>
+            </tr>`;
+        }
+
+        function openOrdersDashboard() {
+            if (!isAdminLoggedIn) {
+                showToast("Silakan login admin terlebih dahulu.", "error");
+                return;
+            }
+            document.getElementById('ordersModal').classList.remove('hidden');
+            renderOrders();
+        }
+
+        function closeOrdersDashboard() {
+            document.getElementById('ordersModal').classList.add('hidden');
+        }
+
+        function setOrderFilter(status) {
+            ordersFilter = status;
+            renderOrders();
+        }
+
+        function refreshAdminMenuBadge() {
+            const badge = document.getElementById('adminMenuOrderBadge');
+            if (!badge) return;
+            const n = ordersData.filter(o => o.status === 'BARU').length;
+            badge.textContent = n;
+            badge.classList.toggle('hidden', n === 0);
+        }
+
+        function renderOrders() {
+            const tabsEl = document.getElementById('ordersFilterTabs');
+            if (!tabsEl) return;
+
+            const tabs = ['SEMUA', ...ORDER_STATUSES];
+            tabsEl.innerHTML = tabs.map(st => {
+                const count = st === 'SEMUA' ? ordersData.length : ordersData.filter(o => o.status === st).length;
+                const active = st === ordersFilter;
+                return `<button type="button" role="tab" aria-selected="${active}" onclick="setOrderFilter('${st}')" class="shrink-0 px-3.5 py-2 rounded-full text-xs font-semibold border transition-all flex items-center gap-1.5 min-h-[40px] ${active ? 'bg-ink text-white border-ink' : 'bg-white text-ink-muted border-taupe/25 hover:border-taupe/50'}">
+                    ${st === 'SEMUA' ? 'Semua' : st}
+                    <span class="px-1.5 py-0.5 rounded-full text-[10px] ${active ? 'bg-white/20' : 'bg-taupe/15'}">${count}</span>
+                </button>`;
+            }).join('');
+
+            const list = ordersFilter === 'SEMUA' ? ordersData : ordersData.filter(o => o.status === ordersFilter);
+            document.getElementById('ordersTotalCount').textContent = `${ordersData.length} pesanan total`;
+            document.getElementById('ordersEmpty').classList.toggle('hidden', list.length > 0);
+            document.getElementById('ordersCards').innerHTML = list.map(orderCardHtml).join('');
+            document.getElementById('ordersTableBody').innerHTML = list.map(orderRowHtml).join('');
+            document.getElementById('ordersTableWrap').classList.toggle('hidden', list.length === 0);
+
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+        }
+
+        async function changeOrderStatus(id, status) {
+            if (!requireAdmin() || !ORDER_STATUSES.includes(status)) return;
+            const order = ordersData.find(o => o.id === id);
+            if (!order || order.status === status) return;
+            try {
+                await window.fbUpdateOrderStatus(id, status);
+                showToast(`Status #${id} diubah ke ${status}.`, "success");
+            } catch (err) {
+                console.error(err);
+                showToast(errorMessageFrom(err, "Gagal mengubah status pesanan."), "error");
+                renderOrders();
+            }
+        }
+
+        async function contactCustomer(id) {
+            const order = ordersData.find(o => o.id === id);
+            if (!order) return;
+            const phone = normalizeWaNumber(order.customer?.wa);
+            if (phone.length < 8) {
+                showToast("Nomor WhatsApp pelanggan tidak valid.", "error");
+                return;
+            }
+            const name = order.customer?.name || 'kak';
+            const msg = `Halo kak ${name}, kami dari ${storeConfig.name} ingin mengonfirmasi pesanan #${order.id}. ` +
+                (order.type === 'custom'
+                    ? `Boleh kami bantu rancang buketnya? Estimasi budget: ${order.budget || '-'}.`
+                    : `Total pesanan: ${formatRp(order.total || 0)}. Mohon konfirmasi jadwal kirim dan pembayaran ya kak.`);
+
+            window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, '_blank');
+
+            if (order.status === 'BARU') {
+                try { await window.fbUpdateOrderStatus(id, 'DIHUBUNGI'); }
+                catch (err) { console.error(err); }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', refreshAdminMenuBadge);
+
+        /* ===== Callback dari modul Firebase (index.html, bagian type="module") ===== */
+        window.__onAuth = (user, isAdmin) => {
+            isAdminLoggedIn = isAdmin;
+            const label = document.getElementById('adminEmailLabel');
+            if (label) label.textContent = user ? user.email : '';
+            if (!isAdmin) {
+                ordersData = [];
+                closeOrdersDashboard();
+            }
+            checkAdminSession();
+            refreshAdminMenuBadge();
+        };
+
+        window.__onProducts = data => {
+            productsData = data;
+            productsLoaded = true;
+            renderProducts();
+        };
+
+        window.__onSettings = payload => {
+            if (isEditorDirty()) return; // jangan timpa perubahan yang sedang diedit admin
+            if (payload && payload.store) storeConfig = { ...DEFAULT_STORE, ...payload.store };
+            if (payload && payload.style) styleConfig = { ...DEFAULT_STYLE, ...payload.style };
+            applyStyleConfigToDOM();
+            if (styleConfig.theme) applyThemePreset(styleConfig.theme);
+            updateUIStoreInfo();
+        };
+
+        window.__onOrders = list => {
+            ordersData = Array.isArray(list) ? list : [];
+            refreshAdminMenuBadge();
+            if (!document.getElementById('ordersModal').classList.contains('hidden')) renderOrders();
+        };
+
+        window.__onError = msg => showToast(msg, 'error');
+
+        /* Jika modul Firebase gagal dimuat, katalog tetap ditandai selesai dengan pesan jelas */
+        setTimeout(() => {
+            if (!productsLoaded) {
+                productsLoaded = true;
+                renderProducts();
+                showToast("Katalog belum dapat dimuat. Periksa koneksi internet.", "error");
+            }
+        }, 10000);
+
+        /* ===== Visual Builder: pratinjau, simpan, dan batal ===== */
+        const HERO_PRESETS = [
+            { name: 'Default', url: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1600&auto=format&fit=crop' },
+            { name: 'Mawar', url: 'https://images.unsplash.com/photo-1562690868-60bbe7293e94?q=80&w=1600&auto=format&fit=crop' },
+            { name: 'Tulip', url: 'https://images.unsplash.com/photo-1520763185298-1b434c919102?q=80&w=1600&auto=format&fit=crop' },
+            { name: 'Peony', url: 'https://images.unsplash.com/photo-1563241527-3004b7be0ffd?q=80&w=1600&auto=format&fit=crop' }
+        ];
+
+        function isEditorDirty() {
+            return editorSnapshot !== null && editorSnapshot !== JSON.stringify({ store: storeConfig, style: styleConfig });
+        }
+
+        function updateEditorDirty() {
+            const el = document.getElementById('editorDirtyStatus');
+            if (el) {
+                el.innerHTML = isEditorDirty()
+                    ? '<span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> Ada perubahan belum disimpan'
+                    : '<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Tersimpan';
+            }
+            renderHeroPresets();
+        }
+
+        function renderHeroPresets() {
+            const grid = document.getElementById('heroPresetGrid');
+            if (!grid) return;
+            grid.innerHTML = HERO_PRESETS.map((p, i) => {
+                const active = styleConfig.heroBgUrl === p.url;
+                return `<button type="button" role="radio" aria-checked="${active}" aria-label="Preset ${escapeHtml(p.name)}" onclick="applyHeroPreset(${i})"
+                    class="relative rounded-lg overflow-hidden aspect-[4/3] min-h-[44px] border-2 transition-all ${active ? 'border-editor-accent ring-2 ring-editor-accent/40' : 'border-white/10 hover:border-white/40'}">
+                    <img src="${escapeHtml(p.url.replace('w=1600', 'w=300'))}" alt="" loading="lazy" class="w-full h-full object-cover">
+                    <span class="absolute bottom-0 inset-x-0 bg-black/60 text-[10px] font-semibold text-white py-0.5">${escapeHtml(p.name)}</span>
+                </button>`;
+            }).join('');
+        }
+
+        function applyHeroPreset(index) {
+            const preset = HERO_PRESETS[index];
+            if (!preset) return;
+            document.getElementById('styleHeroBgUrl').value = preset.url;
+            document.getElementById('styleHeroImgFile').value = '';
+            updateHeroStyleLive();
+            updateEditorDirty();
+        }
+
+        function cancelEditorChanges() {
+            if (editorSnapshot) {
+                const snap = JSON.parse(editorSnapshot);
+                storeConfig = snap.store;
+                styleConfig = snap.style;
+                applyStyleConfigToDOM();
+                if (styleConfig.theme) applyThemePreset(styleConfig.theme);
+                updateUIStoreInfo();
+            }
+            editorSnapshot = null;
+            closeEditorDrawer();
+        }
+
+        function requestCancelEditor() {
+            if (!isEditorDirty()) {
+                cancelEditorChanges();
+                return;
+            }
+            customConfirm("Perubahan yang belum disimpan akan dibuang. Lanjutkan?", cancelEditorChanges, "Buang Perubahan");
+        }
+
+        function openProductFromEditor() {
+            if (isEditorDirty()) {
+                showToast("Simpan atau batalkan perubahan editor terlebih dahulu.", "error");
+                return;
+            }
+            closeEditorDrawer();
+            openAddProductModal();
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const panel = document.getElementById('editorPanel');
+            if (panel) {
+                panel.addEventListener('input', updateEditorDirty);
+                panel.addEventListener('change', updateEditorDirty);
+            }
+        });
+
+        /* ===== Fitur AI: Sommelier Buket & Kartu Ucapan ===== */
+        const AI_TIMEOUT_MS = 20000;
+        let aiMode = 'sommelier';
+        let aiState = { status: 'idle', error: '', items: [], message: '' };
+        let aiBusy = false;
+
+        async function callAI(path, payload) {
+            const ctrl = new AbortController();
+            const timer = setTimeout(() => ctrl.abort(), AI_TIMEOUT_MS);
+            try {
+                const res = await fetch(path, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload),
+                    signal: ctrl.signal
+                });
+                let data = null;
+                try { data = await res.json(); } catch (_) { data = null; }
+                if (!res.ok || !data || data.error) {
+                    throw new Error((data && data.error) || `Layanan AI belum tersedia (${res.status}). Coba lagi nanti.`);
+                }
+                return data;
+            } catch (err) {
+                if (err.name === 'AbortError') throw new Error('Permintaan terlalu lama. Silakan coba lagi.');
+                if (err instanceof TypeError) throw new Error('Tidak dapat terhubung ke layanan AI. Periksa koneksi Anda.');
+                throw err;
+            } finally {
+                clearTimeout(timer);
+            }
+        }
+
+        function catalogNames() {
+            return ['fresh', 'artificial', 'gift']
+                .flatMap(c => productsData[c] || [])
+                .map(p => p.name)
+                .slice(0, 30);
+        }
+
+        function openAiSommelier() {
+            aiMode = 'sommelier';
+            aiState = { status: 'idle', error: '', items: [], message: '' };
+            openAiModal('Bantu Pilih Buket', `
+                <p class="text-xs text-ink-muted">Ceritakan acara, penerima, dan suasana yang Anda inginkan. AI akan merekomendasikan gaya buket dari katalog kami.</p>
+                <div>
+                    <label for="aiSommelierInput" class="block text-xs font-semibold uppercase tracking-wider text-ink-muted mb-1.5">Deskripsi *</label>
+                    <textarea id="aiSommelierInput" rows="3" maxlength="400" placeholder="Contoh: Ulang tahun ibu, suka warna pastel, budget sekitar 200 ribu" class="w-full px-4 py-3 rounded-xl border border-taupe/25 bg-soft-beige/40 focus:outline-none focus:ring-2 focus:ring-taupe text-sm"></textarea>
+                </div>
+                <button id="aiSubmitBtn" type="button" onclick="runSommelier()" class="w-full py-3 rounded-xl bg-ink hover:bg-ink-muted text-white font-semibold text-sm min-h-[44px] transition-colors flex items-center justify-center gap-2">
+                    <i data-lucide="sparkles" class="w-4 h-4 text-orange-cta"></i> Cari Rekomendasi
+                </button>`);
+        }
+
+        function openAiGreeting() {
+            aiMode = 'greeting';
+            aiState = { status: 'idle', error: '', items: [], message: '' };
+            openAiModal('Buat Ucapan dengan AI', `
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label for="aiTo" class="block text-[11px] font-semibold uppercase text-ink-muted mb-1">Untuk</label>
+                        <input type="text" id="aiTo" maxlength="40" placeholder="Nama penerima" class="w-full px-3 py-2.5 rounded-xl border border-taupe/25 bg-soft-beige/40 text-sm focus:outline-none focus:ring-2 focus:ring-taupe">
+                    </div>
+                    <div>
+                        <label for="aiFrom" class="block text-[11px] font-semibold uppercase text-ink-muted mb-1">Dari</label>
+                        <input type="text" id="aiFrom" maxlength="40" placeholder="Nama pengirim" class="w-full px-3 py-2.5 rounded-xl border border-taupe/25 bg-soft-beige/40 text-sm focus:outline-none focus:ring-2 focus:ring-taupe">
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label for="aiTone" class="block text-[11px] font-semibold uppercase text-ink-muted mb-1">Suasana</label>
+                        <select id="aiTone" class="w-full px-3 py-2.5 rounded-xl border border-taupe/25 bg-soft-beige/40 text-sm focus:outline-none focus:ring-2 focus:ring-taupe">
+                            <option value="hangat">Hangat</option>
+                            <option value="puitis">Puitis</option>
+                            <option value="lucu">Ceria</option>
+                            <option value="formal">Formal</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="aiOccasion" class="block text-[11px] font-semibold uppercase text-ink-muted mb-1">Acara (opsional)</label>
+                        <input type="text" id="aiOccasion" maxlength="60" placeholder="Ulang tahun, wisuda..." class="w-full px-3 py-2.5 rounded-xl border border-taupe/25 bg-soft-beige/40 text-sm focus:outline-none focus:ring-2 focus:ring-taupe">
+                    </div>
+                </div>
+                <button id="aiSubmitBtn" type="button" onclick="runGreeting()" class="w-full py-3 rounded-xl bg-ink hover:bg-ink-muted text-white font-semibold text-sm min-h-[44px] transition-colors flex items-center justify-center gap-2">
+                    <i data-lucide="sparkles" class="w-4 h-4 text-orange-cta"></i> Buat Ucapan
+                </button>`);
+
+            document.getElementById('aiTo').value = document.getElementById('cardTo').value.trim();
+            document.getElementById('aiFrom').value = document.getElementById('cardFrom').value.trim();
+        }
+
+        function openAiModal(title, formHtml) {
+            document.getElementById('aiModalTitle').textContent = title;
+            document.getElementById('aiModalBody').innerHTML = formHtml + '<div id="aiStatus"></div><div id="aiResult"></div>';
+            document.getElementById('aiModal').classList.remove('hidden');
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+        }
+
+        function closeAiModal() {
+            document.getElementById('aiModal').classList.add('hidden');
+        }
+
+        function setAiBusy(busy) {
+            aiBusy = busy;
+            const btn = document.getElementById('aiSubmitBtn');
+            if (!btn) return;
+            btn.disabled = busy;
+            btn.classList.toggle('opacity-60', busy);
+            btn.textContent = busy ? 'Sedang memproses...' : (aiMode === 'greeting' ? 'Buat Ucapan' : 'Cari Rekomendasi');
+        }
+
+        function renderAiStatus() {
+            const el = document.getElementById('aiStatus');
+            if (!el) return;
+            if (aiState.status === 'loading') {
+                el.innerHTML = `<div class="flex items-center gap-3 rounded-xl bg-soft-beige/60 border border-taupe/15 p-4 text-xs text-ink-muted" role="status">
+                    <span class="w-4 h-4 border-2 border-taupe/30 border-t-orange-cta rounded-full animate-spin"></span>
+                    ${aiMode === 'greeting' ? 'Sedang menulis ucapan...' : 'Sedang meracik rekomendasi...'}
+                </div>`;
+            } else if (aiState.status === 'error') {
+                el.innerHTML = `<div class="rounded-xl bg-red-50 border border-red-200 p-4 text-xs text-red-700 space-y-2" role="alert">
+                    <p class="font-semibold">Gagal memproses permintaan</p>
+                    <p>${escapeHtml(aiState.error)}</p>
+                    <button type="button" onclick="${aiMode === 'greeting' ? 'runGreeting()' : 'runSommelier()'}" class="px-3 py-2 rounded-lg bg-red-600 text-white font-semibold min-h-[40px]">Coba Lagi</button>
+                </div>`;
+            } else {
+                el.innerHTML = '';
+            }
+        }
+
+        function renderSommelierResults() {
+            const el = document.getElementById('aiResult');
+            if (!el) return;
+            if (aiState.status !== 'ok' || aiMode !== 'sommelier') { el.innerHTML = ''; return; }
+            el.innerHTML = `<p class="text-[11px] font-semibold uppercase tracking-wider text-ink-muted mb-2">Rekomendasi untuk Anda</p>
+                <div class="space-y-3">` + aiState.items.map((it, i) => `
+                    <article class="rounded-2xl border border-taupe/20 bg-white p-4 shadow-xs space-y-2">
+                        <h4 class="type-h3 text-ink">${escapeHtml(it.name)}</h4>
+                        <p class="text-xs text-ink-muted leading-relaxed">${escapeHtml(it.reason)}</p>
+                        <button type="button" onclick="applySommelierPick(${i})" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-orange-cta to-orange-hover text-white text-xs font-bold min-h-[44px]">Gunakan Ide Ini</button>
+                    </article>`).join('') + '</div>';
+        }
+
+        function renderGreetingResult() {
+            const el = document.getElementById('aiResult');
+            if (!el) return;
+            if (aiState.status !== 'ok' || aiMode !== 'greeting') { el.innerHTML = ''; return; }
+            const to = document.getElementById('aiTo').value.trim();
+            const from = document.getElementById('aiFrom').value.trim();
+            el.innerHTML = `<p class="text-[11px] font-semibold uppercase tracking-wider text-ink-muted mb-2">Pratinjau Kartu</p>
+                <div class="rounded-2xl bg-gradient-to-br from-blush-light to-soft-beige border border-taupe/20 p-5 shadow-card text-center space-y-2">
+                    ${to ? `<p class="font-script text-3xl text-taupe-dark">Untuk ${escapeHtml(to)}</p>` : ''}
+                    <p class="text-sm text-ink leading-relaxed italic">"${escapeHtml(aiState.message)}"</p>
+                    ${from ? `<p class="text-xs font-semibold text-ink-muted">— ${escapeHtml(from)}</p>` : ''}
+                </div>
+                <div class="grid grid-cols-2 gap-2 mt-3">
+                    <button type="button" onclick="runGreeting()" class="py-2.5 rounded-xl border border-taupe/30 text-xs font-semibold text-ink min-h-[44px]">Buat Ulang</button>
+                    <button type="button" onclick="applyGreetingPick()" class="py-2.5 rounded-xl bg-ink text-white text-xs font-bold min-h-[44px]">Pakai Ucapan Ini</button>
+                </div>`;
+        }
+
+        function normalizeRecommendations(data) {
+            const list = Array.isArray(data?.recommendations) ? data.recommendations : [];
+            return list
+                .filter(r => r && typeof r.name === 'string' && r.name.trim())
+                .slice(0, 3)
+                .map(r => ({ name: r.name.trim().slice(0, 80), reason: String(r.reason || '').trim().slice(0, 240) }));
+        }
+
+        async function runSommelier() {
+            if (aiBusy) return;
+            const input = document.getElementById('aiSommelierInput');
+            const prompt = input.value.trim();
+            if (prompt.length < 10) {
+                aiState = { status: 'error', error: 'Ceritakan sedikit lebih detail (minimal 10 karakter).', items: [], message: '' };
+                renderAiStatus(); renderSommelierResults();
+                return;
+            }
+            aiState = { status: 'loading', error: '', items: [], message: '' };
+            setAiBusy(true); renderAiStatus(); renderSommelierResults();
+            try {
+                const data = await callAI('/api/ai/sommelier', { prompt, catalog: catalogNames() });
+                const items = normalizeRecommendations(data);
+                if (!items.length) throw new Error('Belum ada rekomendasi yang sesuai. Coba ubah deskripsi Anda.');
+                aiState = { status: 'ok', error: '', items, message: '' };
+            } catch (err) {
+                console.error(err);
+                aiState = { status: 'error', error: err.message, items: [], message: '' };
+            } finally {
+                setAiBusy(false);
+                renderAiStatus(); renderSommelierResults();
+            }
+        }
+
+        function applySommelierPick(index) {
+            const item = aiState.items[index];
+            if (!item) return;
+            const notesEl = document.getElementById('custNotes');
+            const line = `Ide AI: ${item.name}${item.reason ? ' — ' + item.reason : ''}`;
+            notesEl.value = notesEl.value.trim() ? `${line}\n${notesEl.value.trim()}` : line;
+            closeAiModal();
+            switchCategoryTab('custom');
+            document.getElementById('customOrderForm').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            showToast("Ide dimasukkan ke catatan pesanan.", "success");
+        }
+
+        async function runGreeting() {
+            if (aiBusy) return;
+            const to = document.getElementById('aiTo').value.trim();
+            const from = document.getElementById('aiFrom').value.trim();
+            const tone = document.getElementById('aiTone').value;
+            const occasion = document.getElementById('aiOccasion').value.trim();
+            if (to.length < 2) {
+                aiState = { status: 'error', error: 'Isi nama penerima terlebih dahulu.', items: [], message: '' };
+                renderAiStatus(); renderGreetingResult();
+                return;
+            }
+            aiState = { status: 'loading', error: '', items: [], message: '' };
+            setAiBusy(true); renderAiStatus(); renderGreetingResult();
+            try {
+                const data = await callAI('/api/ai/greeting', { to, from, tone, occasion });
+                const message = String(data?.message || '').trim().slice(0, 300);
+                if (!message) throw new Error('Ucapan belum berhasil dibuat. Silakan coba lagi.');
+                aiState = { status: 'ok', error: '', items: [], message };
+            } catch (err) {
+                console.error(err);
+                aiState = { status: 'error', error: err.message, items: [], message: '' };
+            } finally {
+                setAiBusy(false);
+                renderAiStatus(); renderGreetingResult();
+            }
+        }
+
+        function applyGreetingPick() {
+            if (!aiState.message) return;
+            const to = document.getElementById('aiTo').value.trim();
+            const from = document.getElementById('aiFrom').value.trim();
+            document.getElementById('cardMsg').value = aiState.message;
+            if (to) document.getElementById('cardTo').value = to;
+            if (from) document.getElementById('cardFrom').value = from;
+            closeAiModal();
+            showToast("Ucapan dimasukkan ke kartu.", "success");
+        }
+    </script>
+
+    <!-- Firebase: Auth Google, Firestore (database), Storage (foto). Isi firebaseConfig dari Firebase Console. -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+        import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
+        import { getFirestore, collection, doc, onSnapshot, setDoc, deleteDoc, query, orderBy } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
+        import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-storage.js";
+
+        /* ===== KONFIGURASI FIREBASE =====
+           Firebase Console > Project settings > General > Your apps > Web app > SDK setup and configuration */
+        const firebaseConfig = {
+            apiKey: "ISI_API_KEY",
+            authDomain: "ISI_PROJECT.firebaseapp.com",
+            projectId: "ISI_PROJECT",
+            storageBucket: "ISI_PROJECT.firebasestorage.app",
+            messagingSenderId: "ISI_SENDER_ID",
+            appId: "ISI_APP_ID"
+        };
+
+        /* Satu-satunya akun yang boleh masuk sebagai admin (juga dijaga di Security Rules) */
+        const ADMIN_EMAIL = "bandwagonroom@gmail.com";
+        const UPLOAD_TIMEOUT_MS = 300000; // 5 menit
+        const FIREBASE_READY = !firebaseConfig.apiKey.startsWith("ISI_");
+
+        const notifyError = msg => window.__onError && window.__onError(msg);
+        const requireDb = () => { if (!db) throw new Error("Firebase belum dikonfigurasi. Isi firebaseConfig di index.html."); };
+
+        let app = null, auth = null, db = null, storage = null;
+        const provider = new GoogleAuthProvider();
+        provider.setCustomParameters({ prompt: "select_account" });
+
+        if (FIREBASE_READY) {
+            app = initializeApp(firebaseConfig);
+            auth = getAuth(app);
+            db = getFirestore(app);
+            storage = getStorage(app);
+        } else {
+            window.__onAuth && window.__onAuth(null, false);
+            window.__onProducts && window.__onProducts({ fresh: [], artificial: [], gift: [] });
+            window.__onSettings && window.__onSettings(null);
+            window.__onOrders && window.__onOrders([]);
+            setTimeout(() => notifyError("Firebase belum dikonfigurasi. Isi firebaseConfig di index.html."), 500);
+        }
+
+        /* ===== Login admin: Google saja ===== */
+        let unsubOrders = null;
+        if (auth) {
+            onAuthStateChanged(auth, user => {
+                const isAdmin = !!user && user.email === ADMIN_EMAIL && user.emailVerified === true;
+                if (user && !isAdmin) {
+                    notifyError("Akun ini bukan akun admin toko.");
+                    signOut(auth);
+                    return;
+                }
+                window.__onAuth(user, isAdmin);
+
+                if (unsubOrders) { unsubOrders(); unsubOrders = null; }
+                if (isAdmin) {
+                    unsubOrders = onSnapshot(
+                        query(collection(db, "orders"), orderBy("createdAt", "desc")),
+                        snap => window.__onOrders(snap.docs.map(d => ({ id: d.id, ...d.data() }))),
+                        err => { console.error(err); notifyError("Gagal memuat pesanan. Periksa Security Rules Firestore."); }
+                    );
+                } else {
+                    window.__onOrders([]);
+                }
+            });
+        }
+
+        /* ===== Data publik: katalog & pengaturan (real-time) ===== */
+        if (db) {
+            onSnapshot(collection(db, "products"),
+                snap => {
+                    const data = { fresh: [], artificial: [], gift: [] };
+                    snap.docs
+                        .map(d => ({ id: d.id, ...d.data() }))
+                        .sort((a, b) => (b.updatedAt || 0) - (a.updatedAt || 0))
+                        .forEach(p => {
+                            if (data[p.cat]) data[p.cat].push({
+                                id: p.id, name: p.name, price: p.price,
+                                img: p.img, images: p.images || [p.img], badge: p.badge || ""
+                            });
+                        });
+                    window.__onProducts(data);
+                },
+                err => { console.error(err); notifyError("Gagal memuat katalog."); }
+            );
+
+            onSnapshot(doc(db, "settings", "store"),
+                snap => window.__onSettings(snap.exists() ? snap.data() : null),
+                err => { console.error(err); notifyError("Gagal memuat pengaturan toko."); }
+            );
+        }
+
+        /* ===== Fungsi yang dipanggil dari kode utama (window.*) ===== */
+        window.fbSignIn = async () => {
+            if (!auth) return notifyError("Firebase belum dikonfigurasi.");
+            try {
+                await signInWithPopup(auth, provider);
+            } catch (err) {
+                if (err.code === "auth/popup-closed-by-user" || err.code === "auth/cancelled-popup-request") return;
+                const map = {
+                    "auth/popup-blocked": "Popup diblokir browser. Izinkan popup lalu coba lagi.",
+                    "auth/unauthorized-domain": "Domain ini belum diizinkan di Firebase Auth (Authorized domains).",
+                    "auth/operation-not-allowed": "Login Google belum diaktifkan di Firebase Auth."
+                };
+                console.error(err);
+                notifyError(map[err.code] || "Login Google gagal. Coba lagi.");
+            }
+        };
+
+        window.fbSignOut = async () => { if (auth) await signOut(auth); };
+
+        window.fbSaveProduct = product => { requireDb(); return setDoc(doc(db, "products", product.id), product); };
+        window.fbDeleteProduct = id => { requireDb(); return deleteDoc(doc(db, "products", id)); };
+        window.fbSaveSettings = (store, style) => { requireDb(); return setDoc(doc(db, "settings", "store"), { store, style }); };
+        window.fbCreateOrder = order => { requireDb(); return setDoc(doc(db, "orders", order.id), order); };
+        window.fbUpdateOrderStatus = (id, status) => { requireDb(); return setDoc(doc(db, "orders", id), { status }, { merge: true }); };
+
+        const storageErrorText = err => {
+            if (err && err.code === "storage/unauthorized") return "Akses unggah ditolak. Pastikan login dengan akun admin toko.";
+            if (err && err.code === "storage/quota-exceeded") return "Kuota penyimpanan foto penuh.";
+            return "Foto gagal diunggah. Periksa koneksi lalu coba lagi.";
+        };
+
+        /* Unggah satu file ke Storage dengan progres dan batas waktu 5 menit */
+        window.fbUploadImage = (blob, path, onProgress) => new Promise((resolve, reject) => {
+            if (!storage) return reject(new Error("Firebase belum dikonfigurasi. Isi firebaseConfig di index.html."));
+            const task = uploadBytesResumable(ref(storage, path), blob, { contentType: blob.type || "image/jpeg" });
+            const timer = setTimeout(() => {
+                task.cancel();
+                reject(new Error("Foto gagal diunggah: melebihi 5 menit. Periksa koneksi lalu coba lagi."));
+            }, UPLOAD_TIMEOUT_MS);
+            task.on("state_changed",
+                snap => onProgress && onProgress(Math.round((snap.bytesTransferred / snap.totalBytes) * 100)),
+                err => { clearTimeout(timer); console.error(err); reject(new Error(storageErrorText(err))); },
+                async () => {
+                    clearTimeout(timer);
+                    try { resolve(await getDownloadURL(task.snapshot.ref)); }
+                    catch (e) { reject(new Error(storageErrorText(e))); }
+                }
+            );
+        });
+    </script>
+
+</body>
+</html>
